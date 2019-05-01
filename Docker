@@ -1,1 +1,2 @@
-
+// Infos sur le container (addresse ip ......)
+sudo docker inspect id_container 
