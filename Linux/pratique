@@ -1,3 +1,7 @@
+// Commande grep
+grep -i ---> rend la recherche insensible à la casse
+grep -r ---> effectue une recherche récursive
+
 // Lister les process
 sudo ps aux | grep java    ---->  ps java est-il  run?
 // Lister les ports
