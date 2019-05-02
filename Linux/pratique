@@ -1,3 +1,13 @@
-//Lister les ports
+// Lister les process
+sudo ps aux | grep java    ---->  ps java est-il  run?
+// Lister les ports
 sudo netstat -tulpn | grep LISTEN
+sudo netstat -tulpn | grep 80     // le process qui écoute sur le port 80
+
+// Tuer le process qui utilise le port 80
+sudo kill $(sudo lsof -t -i :80)
+
+// Lister les process qui écoutent sur le port 8080 avec lsof
+sudo lsof -n -i:8080 | grep LISTEN | awk '{print $2}'
+
 
