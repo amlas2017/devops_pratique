@@ -1,2 +1,5 @@
 // Infos sur le container (addresse ip ......)
 sudo docker inspect id_container 
+// Une fois un container est arrété , on ne peut pas le relancer par RUN. On utilise alors la commande START et ensuite EXEC
+sudo docker start ubuntu
+sudo docker exec -it ubuntu /bin/bash
