@@ -1,2 +1,3 @@
 // Espace disque d'un noeud
 [vagrant@server00 ~]$ ansible server01 -a "df -h"
+
