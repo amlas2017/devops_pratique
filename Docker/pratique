@@ -1,6 +1,17 @@
 // Infos sur le container (addresse ip ......)
 sudo docker inspect id_container 
+
 // Une fois un container est arrété , on ne peut pas le relancer par RUN. On utilise alors la commande START et ensuite EXEC
 sudo docker start ubuntu
 sudo docker exec -it ubuntu /bin/bash
+
+// Faire un commit sur image docker et un push vers docker hub
+sudo vim Dockerfile  // update Dockerfile
+sudo docker build -t mon_ubuntu .  // create image
+sudo docker run -it --name mon_ubuntu_ps mon_ubuntu   // pour avoir un ID du container
+sudo docker ps -a
+sudo docker commit 03b1734fb20b docker.io/amlas/mon_ubuntu  //Faut respecter le format docker hub .../.../....
+sudo docker login
+sudo docker push docker.io/amlas/mon_ubuntu
+
 
