@@ -18,7 +18,8 @@ sudo docker push docker.io/amlas/mon_ubuntu
 sudo docker volume create --name mydata
 sudo docker volume inspect mydata   // détails sur le volume mydata ("Mountpoint": "/var/lib/docker/volumes/mydata/_data")
 sudo docker run --rm -it -v mydata:/c_mydata ubuntu   // --rm --> le container arrété va étre supprimé et le volume aussi.Pas de --name
-
+// Créer un volume à partir d'un autre container
+sudo docker run -it --name=container2 --volumes-from container1 ubuntu 
 
 
 
