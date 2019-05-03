@@ -3,7 +3,10 @@ grep -i ---> rend la recherche insensible à la casse
 grep -r ---> effectue une recherche récursive
 
 // Lister les process
+   // Lister all processes --->  ps -ax or -e
+   // lister  by user ------> ps -u
 sudo ps aux | grep java    ---->  ps java est-il  run?
+sudo ps a
 // Lister les ports
 sudo netstat -tulpn | grep LISTEN
 sudo netstat -tulpn | grep 80     // le process qui écoute sur le port 80
