@@ -1,3 +1,7 @@
 // Espace disque d'un noeud
 [vagrant@server00 ~]$ ansible server01 -a "df -h"
 
+// Lancer ansible-tower 
+$ sudo vagrant init ansible/tower
+$ sudo vagrant up --provider virtualbox
+$ sudo vagrant ssh
