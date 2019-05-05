@@ -1,3 +1,6 @@
+//Comande tail
+......
+
 // Commande grep
 grep -i ---> rend la recherche insensible à la casse
 grep -r ---> effectue une recherche récursive
