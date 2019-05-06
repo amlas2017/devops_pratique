@@ -26,4 +26,9 @@ sudo kill $(sudo lsof -t -i :80)
 // Lister les process qui écoutent sur le port 8080 avec lsof
 sudo lsof -n -i:8080 | grep LISTEN | awk '{print $2}'
 
-
+// Lister les users
+sudo less /etc/passwd   -----> affiche une liste à 7 colonnes
+sudo cut -d: -f1 /etc/passwd    -----> selectionner la 1ère cologetent et nne (nom de user)
+sudo awk -F: '{ print $1}' /etc/passwd  -----> pareil : selectionner la 1ère colonne (nom de user)
+avec un getent et grep , on trouve le nom du user : getent passwd  | grep amlas | awk -F: '{ print $1}'
+- nombre de user: sudo getent passwd | wc -l
