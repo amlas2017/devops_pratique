@@ -5,3 +5,22 @@
 $ sudo vagrant init ansible/tower
 $ sudo vagrant up --provider virtualbox
 $ sudo vagrant ssh
+
+
+// Playbook pour installer les dépendances
+---
+- name: Installation du serveur
+  hosts: all
+  become: yes   # ou  remote_user: root
+  tasks:
+    - yum: name=epel-release state=latest   # ---->  Impossible d'installer htop sans cette ligne
+    - name: Installation de dependances
+      yum: name={{ item }} state=latest
+      with_items:
+       - vim
+       - tree
+       - htop
+       - git
+       - curl
+       - wget
+       - net-tools
