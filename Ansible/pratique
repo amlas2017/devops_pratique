@@ -24,3 +24,30 @@ $ sudo vagrant ssh
        - curl
        - wget
        - net-tools
+
+// playbook pour gérer les users (groups , clé ssh , ...)
+---
+- hosts: all
+  remote_user: root
+  vars:
+    user: amlas1
+    groupes: gamlas
+  tasks:
+    - group:
+        name: "{{groupes}}"
+        state: present
+
+    - name: Add the user {{user}}  # les " " ne sont pas demandés ici
+      user:
+        name: "{{user}}"        #   les  " " sont obligatoires ici
+        shell: /bin/bash
+        groups: "{{groupes}}"
+        append: yes
+    
+    - name: générer clé ssh
+      user:
+        name: "{{user}}"
+        generate_ssh_key: yes
+        ssh_key_bits: 2048
+        ssh_key_file: .ssh/id_rsa
+
