@@ -1,4 +1,10 @@
-//Comande tail
+// Commandes utiles VIM
+- copier une ligne : echap+v + curseur au début de ligne + Y
+- coller une ligne : p ou P
+- supprimer une ligne : echap + dd
+- annuler une modification : echap + u
+
+// Comande tail
 ......
 
 // Commande grep
