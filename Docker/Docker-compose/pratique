@@ -1,0 +1,14 @@
+// Exemple d'un docker-compose simple
+version: "3"
+services:
+  monapp:      // <--------------------------------------------------------- 1er service 
+    build: .   // si l'image monimage existe déjà, pas de build
+    image: monimage   // nom de l'image crée
+    depends_on:      // <-----------------------------------------------Lier les 2 services----
+      - redis
+    ports:
+      - "80:80"
+   
+      
+  redis:        // <---------------------------------------------------------1er service            
+    image: redis
