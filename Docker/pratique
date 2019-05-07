@@ -21,6 +21,9 @@ sudo docker run --rm -it -v mydata:/c_mydata ubuntu   // --rm --> le container a
 // Créer un volume à partir d'un autre container
 sudo docker run -it --name=container2 --volumes-from container1 ubuntu 
 
+// Attention ---> pour localiser le volume dans la machine host, il faut passer par la commande : docker volume inspect ....
+ Le volume n'est pas monté dans le répertoire courant, il est dans : /var/lib/docker/volumes
+
 
 
 
