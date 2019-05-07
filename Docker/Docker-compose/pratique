@@ -1,9 +1,9 @@
-// Exemple d'un docker-compose simple
+// Exemple d'un docker-compose simple  ---->  https://github.com/ttwthomas/apprendre-docker
 version: "3"
 services:
   monapp:      // <--------------------------------------------------------- 1er service 
-    build: .   // si l'image monimage existe déjà, pas de build
-    image: monimage   // nom de l'image crée
+    build: .   // à partir d'un Dockerfile si l'image n'existe pas
+    image: monimage   // nom de l'image existante
     depends_on:      // <-----------------------------------------------Lier les 2 services----
       - redis
     ports:
@@ -12,3 +12,12 @@ services:
       
   redis:        // <---------------------------------------------------------1er service            
     image: redis
+
+// Le dockerfile pour build monimage    ---->  https://github.com/ttwthomas/apprendre-docker
+    FROM python:2.7-slim
+    WORKDIR /app
+    COPY . /app
+    RUN pip install -r requirements.txt
+    EXPOSE 80
+    ENV NOM coca
+    CMD ["python", "app.py"]
