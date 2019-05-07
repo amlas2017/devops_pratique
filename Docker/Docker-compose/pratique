@@ -1,3 +1,11 @@
+// Synthaxe docker-compose
+version: "3"
+services:
+
+networks:
+
+volumes:
+
 // Exemple d'un docker-compose simple  ---->  https://github.com/ttwthomas/apprendre-docker
 version: "3"
 services:
