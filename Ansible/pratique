@@ -1,7 +1,17 @@
 // Espace disque d'un noeud
 [vagrant@server00 ~]$ ansible server01 -a "df -h"
 
-// Lancer ansible-tower 
+// Lancer Tower via un cluster    https://www.youtube.com/watch?v=-cYnnACXcf8
+ Préliminaires: mettre à jour le /etc/hosts  , les clés ssh  et le password dans inventory (avant de lancer setup.sh).
+ 
+Etapes à respecter:
+--> Creating a Project.
+--> Creating a credential.
+--> Creating a Inventory.
+--> Creating a job template.
+--> Run the Job Template. (C'est Template qu'on execute)
+
+// Lancer ansible-tower ----> moins évident pour mettre en place un cluster de VM
 $ sudo vagrant init ansible/tower
 $ sudo vagrant up --provider virtualbox
 $ sudo vagrant ssh
