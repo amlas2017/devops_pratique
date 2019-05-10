@@ -7,6 +7,9 @@
 // Comande tail
 ......
 
+// Commande sed
+  sed -i 's/mot_original/nouveau_mot/g' nom_fichier.txt  ----> (s = substitution, g = tous les mots de la ligne)
+
 // Commande grep
 grep -i ---> rend la recherche insensible à la casse
 grep -r ---> effectue une recherche récursive
