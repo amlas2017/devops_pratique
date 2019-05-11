@@ -4,6 +4,9 @@
 - supprimer une ligne : echap + dd
 - annuler une modification : echap + u
 
+// Commenter des lignes VIM:
+ Pour commenter les lignes 15 à 30 ---------------->  ESC + :15,30s/^/#   et pour décomenter  :15,30s/^#
+
 // Comande tail
 ......
 
