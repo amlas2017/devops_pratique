@@ -1,7 +1,9 @@
 // Commandes utiles VIM
-- copier une ligne : echap+v + curseur au début de ligne + Y
+- copier une ligne : echap+v + curseur au début de ligne + Y   
 - coller une ligne : p ou P
+- copier 5 ligne à partir du curseur ----> 5yy  et coller p
 - supprimer une ligne : echap + dd
+- supprimer 5 lignes à partir du curseur --->5dd
 - annuler une modification : echap + u
 
 // Commenter des lignes VIM:
