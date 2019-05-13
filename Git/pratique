@@ -1,1 +1,8 @@
 Commandes uiles:
+ (voir on est sur quelle branche)
+ // git checkout dev (se positionner dans dev)
+ // git checkout master
+ // git merge dev  ( fallait etre dans master pour faire un merge)
+
+
+
