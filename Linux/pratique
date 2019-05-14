@@ -2,7 +2,7 @@
 - copier une ligne : echap+v + curseur au début de ligne + Y   
 - coller une ligne : p ou P
 - copier 5 ligne à partir du curseur ----> 5yy  et coller p
-- supprimer une ligne : echap + dd
+- supprimer une ligne : echap + dd    ,   `echap + cc` supprime le contenu de la ligne
 - supprimer 5 lignes à partir du curseur --->5dd
 - annuler une modification : echap + u  (undo)  et ctrl+r (redo)
 - rechercher un mot ----> /mot + entrée , l'occurence suivant n
@@ -48,4 +48,4 @@ avec un getent et grep , on trouve le nom du user : getent passwd  | grep amlas 
 // Créer un lien symbolique
 $ ln  -s  /nom_du_dossier_source  nom_du_lien    (répertoire courant)
 $ ln  -s  /emplacement/nom_du_fichier_source  nom_du_lien
-$ ln -s /emplacement/nom_du_fichier_source /emplacement/nom_du_lien (chemin absolu)
+$ ln -s   /emplacement/nom_du_fichier_source /emplacement/nom_du_lien (chemin absolu)
