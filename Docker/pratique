@@ -1,3 +1,6 @@
+// Lister tous les noms des containers
+sudo docker ps -a --format '{{ .Names }}'
+
 // Infos sur le container (addresse ip ......)
 sudo docker inspect id_container 
 
