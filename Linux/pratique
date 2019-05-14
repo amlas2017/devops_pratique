@@ -4,7 +4,8 @@
 - copier 5 ligne à partir du curseur ----> 5yy  et coller p
 - supprimer une ligne : echap + dd
 - supprimer 5 lignes à partir du curseur --->5dd
-- annuler une modification : echap + u
+- annuler une modification : echap + u  (undo)  et ctrl+r (redo)
+- rechercher un mot ----> /mot + entrée , l'occurence suivant n
 
 // Commenter des lignes VIM:
  Pour commenter les lignes 15 à 30 ---------------->  ESC + :15,30s/^/#   et pour décomenter  :15,30s/^#
