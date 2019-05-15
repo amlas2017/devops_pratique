@@ -1,13 +1,7 @@
 // créer un mini datacenter de test avec conteneurs docker :
 
+#!/bin/bash
 ###############################################################
-#  TITRE: parc de conteneurs
-#
-#  AUTEUR:   Xavier
-#  VERSION: 1.1
-#  CREATION:  17/09/2018
-#  MODIFIE: 
-#
 #  DESCRIPTION: 
 #   mot de passe obtenu par :
 #          perl -e 'print crypt("password", "salt"),"\n"'
