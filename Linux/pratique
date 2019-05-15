@@ -52,3 +52,8 @@ avec un getent et grep , on trouve le nom du user : getent passwd  | grep amlas 
 $ ln  -s  /nom_du_dossier_source  nom_du_lien    (répertoire courant)
 $ ln  -s  /emplacement/nom_du_fichier_source  nom_du_lien
 $ ln -s   /emplacement/nom_du_fichier_source /emplacement/nom_du_lien (chemin absolu)
+
+// Les flux de redirection
+2> : redirige les erreurs dans un fichier (s'il existe déjà, il sera écrasé) ;
+2>> : redirige les erreurs à la fin d'un fichier (s'il n'existe pas, il sera créé) ;
+2>&1 : redirige les erreurs au même endroit et de la même façon que la sortie standard.
