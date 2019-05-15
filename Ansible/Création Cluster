@@ -1,5 +1,7 @@
 // créer un mini datacenter de test avec conteneurs docker :
 
+!!!!! Pour utiliser ce script, il faudrait générer les clés ssh dans les containers!!!!!
+
 #!/bin/bash
 ###############################################################
 #  DESCRIPTION: 
