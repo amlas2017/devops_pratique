@@ -38,6 +38,9 @@ sudo lsof -n -i:8080 | grep LISTEN | awk '{print $2}'
 
 // systemctl <action> <nom_du_service>      ----->   systemctl start docker
 
+// Si on ne veut pas ni voir le résultat d'une commande ni le stocker dans un fichier. L'astuce consiste à rediriger le résultat dans /dev/null. 
+C'est un peu le « trou noir » de Linux : tout ce qui va là-dedans disparaît immédiatement.
+
 // Lister les users
 sudo less /etc/passwd   -----> affiche une liste à 7 colonnes
 sudo cut -d: -f1 /etc/passwd    -----> selectionner la 1ère cologetent et nne (nom de user)
