@@ -1,0 +1,37 @@
+---
+- name: "hass"
+  hosts: all
+  vars: 
+    - check5: 78db8bcc424f16dfe87e67a61179a496
+  tasks:
+    - name: check md5
+      stat:
+        path: /tmp/mon_fichier.txt 
+        get_checksum: yes
+        checksum_algorithm: md5
+      register: sum5  
+
+#   - name: debug    ---> pour afficher le résulat des commanes...                       
+#     debug:
+#       msg: "{{ sum5.stat.checksum }}"        
+    
+    - set_fact:
+        data: "0"   
+      when: sum5.stat.checksum is not defined  
+
+    - set_fact:
+        data: "{{ sum5.stat.checksum }}"   
+      when: sum5.stat.checksum is defined  
+    
+    - name: Block de taches.....
+      block:
+      - name: copier fichier....
+        copy:
+          src: ./fichier.txt
+          dest: /tmp/mon_fichier.txt      
+         
+      - name: ajout d'une ligne dans un fichier....
+        lineinfile:
+          path: /tmp/mon_fichier.txt 
+          line: 'wabarakatoho........'     
+      when: data != check5     
