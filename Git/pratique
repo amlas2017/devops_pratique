@@ -1,6 +1,6 @@
 
 
-
+// créer une branche dev : git branche dev
 // git branch  (voir on est sur quelle branche)
 // git checkout dev (se positionner dans dev)
 // git checkout master
