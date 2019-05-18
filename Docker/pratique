@@ -30,8 +30,10 @@ sudo docker run -it --name=container2 --volumes-from container1 ubuntu
 // Attention ---> pour localiser le volume dans la machine host, il faut passer par la commande : docker volume inspect ....
  Le volume n'est pas monté dans le répertoire courant, il est dans : /var/lib/docker/volumes
 
-// Copier un fichier du host vers container
-docker cp mon_fichier 8a25ca6914fa:/tmp         ---> (on utilise nom_du_container ou son ID)
+// Copier de fichiers entre host et container:
+ - de host vers container -----> $ docker cp mon_fichier 8a25ca6914fa:/tmp   ---> (on utilise nom_du_container ou son ID)
+ - du container vers host (pwd) -----> $ docker cp 8a25ca6914fa:/root/fichier.xt .  --->(les ":" sont obligatoires)
+
 
 
 
