@@ -1,5 +1,5 @@
 // API docker (socket)
-sudo nano /etc/init/docker.conf
+sudo nano /etc/init/docker.conf  ou /etc/default/docker 
 DOCKER_OPTS='-H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock'
 sudo service docker restart
 curl -X GET http://<Docker server IP>:4243/images/json
