@@ -1,6 +1,8 @@
 // API docker (socket)
-.....
-
+sudo nano /etc/init/docker.conf
+DOCKER_OPTS='-H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock'
+sudo service docker restart
+curl -X GET http://<Docker server IP>:4243/images/json
 
 // Lister tous les noms des containers
 sudo docker ps -a --format '{{ .Names }}'
