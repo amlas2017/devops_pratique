@@ -14,6 +14,10 @@
 // Comande tail
 ......
 
+// Gestion des logs
+......
+
+
 // Commande sed
   sed -i 's/mot_original/nouveau_mot/g' nom_fichier.txt  ----> (s = substitution, g = tous les mots de la ligne)
 
@@ -34,7 +38,7 @@ sudo netstat -tulpn | grep 80     // le process qui écoute sur le port 80
 sudo kill $(sudo lsof -t -i :80)
 
 // Lister les process qui écoutent sur le port 8080 avec lsof
-sudo lsof -n -i:8080 | grep LISTEN | awk '{print $2}'
+sudo lsof -n -i:8080 | grep LISTEN | awk '{ print $2 }'
 
 // systemctl <action> <nom_du_service>      ----->   systemctl start docker
 
@@ -44,8 +48,8 @@ C'est un peu le « trou noir » de Linux : tout ce qui va là-dedans disparaît 
 // Lister les users
 sudo less /etc/passwd   -----> affiche une liste à 7 colonnes
 sudo cut -d: -f1 /etc/passwd    -----> selectionner la 1ère cologetent et nne (nom de user)
-sudo awk -F: '{ print $1}' /etc/passwd  -----> pareil : selectionner la 1ère colonne (nom de user)
-avec un getent et grep , on trouve le nom du user : getent passwd  | grep amlas | awk -F: '{ print $1}'
+sudo awk -F: '{ print $1 }' /etc/passwd  -----> pareil : selectionner la 1ère colonne (nom de user)
+avec un getent et grep , on trouve le nom du user : getent passwd  | grep amlas | awk -F: '{ print $1 }'
 - nombre de user: sudo getent passwd | wc -l
 
 // Créer un lien symbolique
@@ -57,3 +61,4 @@ $ ln -s   /emplacement/nom_du_fichier_source /emplacement/nom_du_lien (chemin ab
 2> : redirige les erreurs dans un fichier (s'il existe déjà, il sera écrasé) ;
 2>> : redirige les erreurs à la fin d'un fichier (s'il n'existe pas, il sera créé) ;
 2>&1 : redirige les erreurs au même endroit et de la même façon que la sortie standard.
+.???....   >> /dev/null
