@@ -1,1 +1,10 @@
+// Mettre en place une API Docker
+- Docker est installé sur ubuntu16 (VM vagarnt) , Ip = 192.168.33.10
+
+........
+
+
+curl -X GET http://192.168.33.10:4243/containers/json    ---->  fournit un json pour containers Up  uniquement
+son équivalent en tcp est : 
+docker -H tcp://127.0.0.1:4243 ps
 
