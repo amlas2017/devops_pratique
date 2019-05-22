@@ -1,1 +1,7 @@
-
+// API PYTHON DOCKER  ----> Docker SDK for Python    https://docker-py.readthedocs.io/en/stable/containers.html
+pip install docker
+--------- dans python ------
+>>> import docker
+>>> client = docker.from_env()
+>>> client.containers.run("ubuntu:latest", "echo hello world")
+>>> client.containers.run("ubuntu", detach=True)
