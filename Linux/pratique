@@ -1,3 +1,6 @@
+// Infos du host:
+sudo hostnamectl
+
 // Commandes utiles VIM
 - copier une ligne : echap+v + curseur au début de ligne + Y   
 - coller une ligne : p ou P
