@@ -1,4 +1,4 @@
-// Infos du host:
+// Infos du host (version/distribution d' OS):
 sudo hostnamectl
 
 // Commandes utiles VIM
