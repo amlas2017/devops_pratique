@@ -1,0 +1,5 @@
+// Pour créer une seule machine virtuelle (ubuntu) , on utilise vagarant:
+Dans un dossier :
+  sudo vagrant init ubuntu/trusty64   -----> générer automatiquement Vagrantfile
+  sudo vagrant up
+
