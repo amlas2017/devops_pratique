@@ -1,3 +1,8 @@
+
+// docker commit
+docker commit <CONTAINER ID> <new name for the container>  
+  -----> permet d'enregistrer des modifs en créant une new image(pas un new container)
+
 // API docker (socket)
 sudo nano /etc/init/docker.conf  ou /etc/default/docker 
 DOCKER_OPTS='-H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock'
