@@ -1,3 +1,11 @@
+//?????????
+git clone https://github.com/pro-continuous-delivery/hello-world-example.git
+git init
+git add .
+git config --global user.email "amlas2010@live.fr"
+git config --global user.name "amlas2017"
+git commit -m "MAJ"
+
 
 
 // créer une branche dev : git branche dev
