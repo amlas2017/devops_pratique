@@ -1,5 +1,5 @@
 // Infos du host (version/distribution d' OS):
-sudo hostnamectl
+sudo hostnamectl   ou sudo cat /etc/lsb-release
 
 // Commandes utiles VIM
 - copier une ligne : echap+v + curseur au début de ligne + Y   
