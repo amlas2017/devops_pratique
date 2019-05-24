@@ -1,6 +1,9 @@
 // Infos du host (version/distribution d' OS):
 sudo hostnamectl   ou sudo cat /etc/lsb-release
 
+// Emplacement java
+update-java-alternatives -l
+
 // Commandes utiles VIM
 - copier une ligne : echap+v + curseur au début de ligne + Y   
 - coller une ligne : p ou P
