@@ -1,7 +1,9 @@
 // Créer un webhook githib  -----> utilisation de ngrok
 // Après installation : 
+cd /home/hass/Téléchargements/ngrok-stable-linux-amd64
 sudo ./ngrok http  192.168.33.10:8080   (192.168.33.10 est l'ip locale de jenkins)
 ......
 Forwarding                    http://6d0c1fdf.ngrok.io -> http://192.168.33.10:8080   (mapping de l'adresse locale en externe)
 .......
 Dans github/webhook , on met : http://6d0c1fdf.ngrok.io/github-webhook/
+!!!!!!!!!!! Attention : l'url générée change, donc avant d'utiliser webhook, il fallait régénérer une new url)
