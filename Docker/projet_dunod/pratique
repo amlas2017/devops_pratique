@@ -1,0 +1,5 @@
+************************ Source: https://github.com/dunod-docker/docker-examples-edition2.git  ********************************
+// Dépolyer une application (front-end, database, back-end,...) via docker avec 3 méthodes:
+// supervisor : le gestionnaire de service qui va coordonner la gestion des composants
+// Multi-containers: lier plusieurs containers
+// Docker-compose: 
