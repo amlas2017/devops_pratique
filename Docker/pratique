@@ -1,3 +1,6 @@
+// Script pour installer automatiquement docker
+curl -sSL https://get.docker.com/ | sh
+
 // Ajout d'un user au groupe docker
 sudo gpasswd -a vagrant docker   +   redémarrer
 ou  usermod -aG docker vagrant   +   redémarrage
