@@ -1,5 +1,6 @@
 // Ajout d'un user au groupe docker
 sudo gpasswd -a vagrant docker   +   redémarrer
+ou  usermod -aG docker vagrant   +   redémarrage
 
 // docker commit
 docker commit <CONTAINER ID> <new name for the container>  
