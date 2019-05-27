@@ -1,4 +1,6 @@
 ************************ Source: https://github.com/dunod-docker/docker-examples-edition2.git  ********************************
+-->  -->  --> Avant de tester les scripts du répo, il fallait changer les droits avec chmod u+x....
+
 // Dépolyer une application (front-end, database, back-end,...) via docker avec 3 méthodes:
 // supervisor : le gestionnaire de service qui va coordonner la gestion des composants (1 seul container et plusieurs processus)
 // Multi-containers: lier plusieurs containers
