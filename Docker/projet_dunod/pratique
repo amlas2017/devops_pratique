@@ -2,4 +2,4 @@
 // Dépolyer une application (front-end, database, back-end,...) via docker avec 3 méthodes:
 // supervisor : le gestionnaire de service qui va coordonner la gestion des composants (1 seul container et plusieurs processus)
 // Multi-containers: lier plusieurs containers
-// Docker-compose: 
+// Docker-compose: orchestration avec compose
