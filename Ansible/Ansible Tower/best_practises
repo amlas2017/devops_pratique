@@ -16,7 +16,9 @@
       * type SCM : git
       * URL de SCM source : https://github.com/amlas2017/TP_for_ansible.git + cocher "Mettre à jour Révision au lancement"
       * dans liste de projets : cliquer sur le bouton de "mettre à jour".
---> Creating or updating a job template (... on a les fichier *.yml du répo dans "playbooks").      
+--> Creating or updating a job template (... on a les fichier *.yml du répo dans "playbooks").    
+
+// Git (webhook) ----> Jenkins  ----> Ansible Tower   (https://www.ansible.com/blog/ansible-tower-jenkins-in-under-5-minutes)
 
 // Lancer ansible-tower ----> moins évident pour mettre en place un cluster de VM
 $ sudo vagrant init ansible/tower
