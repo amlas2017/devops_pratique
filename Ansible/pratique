@@ -12,7 +12,7 @@ Etapes à respecter:
 --> Creating a credential:
       * type : Machine
       * renseigner la clé ssh privée (depuis la machine hote)
---> Creating a Inventory (add group + host).
+--> Creating a Inventory (add inventory + group + host).
 --> Creating a job template.
 --> Run the Job Template. (C'est Template qu'on execute)
 
