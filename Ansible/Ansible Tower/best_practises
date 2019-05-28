@@ -1,1 +1,24 @@
-//
+// Lancer Tower via un cluster    https://www.youtube.com/watch?v=-cYnnACXcf8
+ Préliminaires: mettre à jour le /etc/hosts  , les clés ssh  et le password dans inventory (avant de lancer setup.sh).
+ Etapes à respecter:
+--> Creating a Project:
+      * type SCM : manuel
+      * créer le dossier de playbook dans /var/lib/awx/projects + $ chown awx nom_dossier_de palybook)
+--> Creating a credential:
+      * type : Machine
+      * renseigner la clé ssh privée (depuis la machine hote)
+--> Creating a Inventory (add inventory + group + host).
+--> Creating a job template.
+--> Run the Job Template. (C'est Template qu'on execute)
+
+// Connecter Ansible Tower à un répo github
+--> Creating a Project:
+      * type SCM : git
+      * URL de SCM source : https://github.com/amlas2017/TP_for_ansible.git + cocher "Mettre à jour Révision au lancement"
+      * dans liste de projets : cliquer sur le bouton de "mettre à jour".
+--> Creating or updating a job template (... on a les fichier *.yml du répo dans "playbooks").      
+
+// Lancer ansible-tower ----> moins évident pour mettre en place un cluster de VM
+$ sudo vagrant init ansible/tower
+$ sudo vagrant up --provider virtualbox
+$ sudo vagrant ssh
