@@ -33,11 +33,11 @@ grep -i ---> rend la recherche insensible à la casse
 grep -r ---> effectue une recherche récursive
 
 // Quelques commandes Filesystem
-/etc/fstab ---> la table des systèmes de fichiers montés à chaque démarrage de Linux)
-/etc/mtab ---> la table des systèmes de fichiers qui sont montés)
-/etc/passwd ---> le fichier de configuration des comptes utilisateurs)
-/etc/group ---> le fichier de configuration des groupes)
-/etc/shadow ---> le fichier de configuration des mots de passe)
+/etc/fstab ---> la table des systèmes de fichiers montés à chaque démarrage de Linux
+/etc/mtab ---> la table des systèmes de fichiers qui sont montés
+/etc/passwd ---> le fichier de configuration des comptes utilisateurs
+/etc/group ---> le fichier de configuration des groupes
+/etc/shadow ---> le fichier de configuration des mots de passe
 
 // Lister les process
    // Lister all processes --->  ps -ax or -e
