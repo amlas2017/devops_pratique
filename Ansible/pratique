@@ -4,8 +4,7 @@
 
 // Lancer Tower via un cluster    https://www.youtube.com/watch?v=-cYnnACXcf8
  Préliminaires: mettre à jour le /etc/hosts  , les clés ssh  et le password dans inventory (avant de lancer setup.sh).
- 
-Etapes à respecter:
+ Etapes à respecter:
 --> Creating a Project:
       * type SCM : manuel
       * créer le dossier de playbook dans /var/lib/awx/projects + $ chown awx nom_dossier_de palybook)
