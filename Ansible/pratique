@@ -6,7 +6,7 @@
  Préliminaires: mettre à jour le /etc/hosts  , les clés ssh  et le password dans inventory (avant de lancer setup.sh).
  
 Etapes à respecter:
---> Creating a Project ( créer le dossier de playbook dans /var/lib/awx/projects)
+--> Creating a Project ( créer le dossier de playbook dans /var/lib/awx/projects + $ chown awx nom_dossier_de palybook)
 --> Creating a credential.
 --> Creating a Inventory.
 --> Creating a job template.
