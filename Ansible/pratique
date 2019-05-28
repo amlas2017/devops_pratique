@@ -22,7 +22,7 @@ $ sudo vagrant up --provider virtualbox
 $ sudo vagrant ssh
 
 
-// Playbook pour installer les dépendances
+// Playbook pour installer les dépendances (Centos)
 ---
 - name: Installation du serveur
   hosts: all
