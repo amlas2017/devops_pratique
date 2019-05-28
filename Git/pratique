@@ -3,15 +3,17 @@ Dans github, cliquer sur "+" + import reposotory + coller le lien du repo à clo
 Après, dans repo local : git clone ......
 
 
-//?????????
-git clone https://github.com/pro-continuous-delivery/hello-world-example.git
-git init
-git add .
-git config --global user.email "amlas2010@live.fr"
-git config --global user.name "amlas2017"
-git commit -m "MAJ"
-
-
+// Méthode pour créer un répo git/github
+- créer un new répo sur github : git remote add origin https://github.com/amlas2017/ansible-jenkins-install.git
+- en local : 
+   * dans le dossier à mettre dans le répo: 
+        git init
+        git add .
+        git commit -m "1er commit"
+        git config --global user.name "amlas2017"
+        git config --global user.email amlas2010@live.fr
+        git remote add origin https://github.com/amlas2017/ansible-jenkins-install.git
+        git push -u origin master
 
 // créer une branche dev : git branche dev
 // git branch  (voir on est sur quelle branche)
