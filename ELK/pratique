@@ -1,4 +1,4 @@
-// ELK fonctionnel (docker-compose , docker swarm...)
+// ELK fonctionnel (docker-compose , docker swarm , travis...)
 https://github.com/deviantony/docker-elk
 
 // Install ELK with docker-compose && Analyzing logs nginx with ELK
