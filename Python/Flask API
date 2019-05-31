@@ -1,4 +1,4 @@
-// Environnements virtuels (ATOM IDE)
+// Environnements virtuels (ATOM IDE)   https://www.youtube.com/watch?v=PTZiDnuC86g&list=PLvx2DJth2J4wIxSKxkjdt5mMVBtCJBqTe&index=1
 $ #Installer python3  et pip3
 $ pip3 install pipenv  (en cas de souci, on execute : export PATH="${HOME}/.local/bin:$PATH")
 $ pipenv shell  (faut etre dans le dossier du projet pour exécuter cette commande)
