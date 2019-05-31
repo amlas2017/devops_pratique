@@ -1,1 +1,4 @@
-//
+// Environnements virtuels
+$ #Installer python3  et pip3
+$ pip3 install pipenv  (en cas de souci, on execute : export PATH="${HOME}/.local/bin:$PATH")
+$ pipenv shell  (faut etre dans le dossier du projet pour exécuter cette commande)
