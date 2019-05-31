@@ -1,4 +1,9 @@
-// Environnements virtuels
+// Environnements virtuels (ATOM IDE)
 $ #Installer python3  et pip3
 $ pip3 install pipenv  (en cas de souci, on execute : export PATH="${HOME}/.local/bin:$PATH")
 $ pipenv shell  (faut etre dans le dossier du projet pour exécuter cette commande)
+// Installation d'utilitaires
+pipenv install flask
+pipenv install flask-sqlalchemy
+pipenv install flask-marshmallow
+pipenv install marshmallow-sqlalchemy
