@@ -5,6 +5,9 @@ ubuntu -----> sudo cat /etc/lsb-release
 // Emplacement java
 update-java-alternatives -l
 
+// Liste de packages installés ubuntu pour les supprimer...
+$ dpkg --list
+
 // Commandes utiles VIM
 - copier une ligne : echap+v + curseur au début de ligne + Y   
 - coller une ligne : p ou P
