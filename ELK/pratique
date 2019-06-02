@@ -9,3 +9,4 @@ https://medium.com/@d3rwan/une-stack-elk-from-scratch-avec-docker-2668bc46f709  
 
 //Installer logstash manuel:
 pour démarrer logstash ---->    sudo /usr/share/logstash/bin/logstash -e 'input { file { path => "/var/log/auth.log" } }'
+ou cgéer un lien symbolique de "/bin/logstash" vers "/usr/share/logstash/bin/logstash"
