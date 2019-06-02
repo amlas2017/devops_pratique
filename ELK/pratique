@@ -6,3 +6,6 @@ https://www.linode.com/docs/databases/elasticsearch/visualize-apache-web-server-
 
 // Install ELK with docker-compose && Analyzing logs nginx with ELK
 https://medium.com/@d3rwan/une-stack-elk-from-scratch-avec-docker-2668bc46f709    -----> !!!! à corriger
+
+//Installer logstash manuel:
+pour démarrer logstash ---->    sudo /usr/share/logstash/bin/logstash -e 'input { file { path => "/var/log/auth.log" } }'
