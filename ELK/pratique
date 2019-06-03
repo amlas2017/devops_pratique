@@ -6,7 +6,8 @@ curl -XGET http://localhost:9200/_cat/indices?v
 
 // Requette elasticsearch :  http://localhost:9200/nom_index/type_index/_service
  http://localhost:9200/movies/movie/_search?pretty
-
+ http://localhost:9200/movies/movie/_search?q=ce-que-je-cherche
+ 
 // Install ELK on Debian + Analyze apache logs with 
 https://www.linode.com/docs/databases/elasticsearch/visualize-apache-web-server-logs-using-elastic-stack-on-debian-8/
 
