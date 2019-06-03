@@ -7,6 +7,9 @@ update-java-alternatives -l
 
 // Pour vérifier si Systemd est installé, on tape :   ps -p 1
 
+// Checker les logs pour un service : ----> journalctl --help
+sudo journalctl --unit elasticsearch (log pour elasticsearch)
+
 // Liste de packages installés ubuntu pour les supprimer...
 $ dpkg --list
 
