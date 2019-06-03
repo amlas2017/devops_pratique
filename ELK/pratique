@@ -1,8 +1,11 @@
+// ELK fonctionnel (docker-compose , docker swarm , travis...)
+https://github.com/deviantony/docker-elk
+
 // Lister les index elastic (un index est l'équivalent d'une table)
 curl -XGET http://localhost:9200/_cat/indices?v
 
-// ELK fonctionnel (docker-compose , docker swarm , travis...)
-https://github.com/deviantony/docker-elk
+// Requette elasticsearch :  http://localhost:9200/nom_index/type_index/_service
+ http://localhost:9200/movies/movie/_search
 
 // Install ELK on Debian + Analyze apache logs with 
 https://www.linode.com/docs/databases/elasticsearch/visualize-apache-web-server-logs-using-elastic-stack-on-debian-8/
