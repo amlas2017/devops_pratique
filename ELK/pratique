@@ -1,3 +1,6 @@
+// Lister les index elastic
+curl -XGET http://localhost:9200/_cat/indices?v
+
 // ELK fonctionnel (docker-compose , docker swarm , travis...)
 https://github.com/deviantony/docker-elk
 
