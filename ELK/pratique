@@ -10,4 +10,8 @@ https://medium.com/@d3rwan/une-stack-elk-from-scratch-avec-docker-2668bc46f709  
 //Installer logstash manuel:
 pour démarrer logstash ---->    sudo /usr/share/logstash/bin/logstash -e 'input { file { path => "/var/log/auth.log" } }'
 ou céer un lien symbolique de "/bin/logstash" vers "/usr/share/logstash/bin/logstash" :
-sudo ln -s /usr/share/logstash/bin/logstash /bin/logstash
+sudo ln -s /usr/share/logstash/bin/logstash /bin/logstashhecker
+
+// Checker les logs elasticsearch: sudo journalctl --unit elasticsearch
+sudo vi /etc/elasticsearch/jvm.options   ---> mofifier par exemple la mémoire....
+
