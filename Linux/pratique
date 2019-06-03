@@ -30,6 +30,9 @@ $ dpkg --list
 
 // Commande sed
   sed -i 's/mot_original/nouveau_mot/g' nom_fichier.txt  ----> (s = substitution, g = tous les mots de la ligne)
+  
+// Commande tee : la sortie de la 1ère commade est stockée dans un fichier.Avec l'option -a , tee n'écrasera pas l'ancien fichier.
+echo "deb http://packages.elastic.co/kibana/4.6/debian stable main" | sudo tee -a /etc/apt/sources.list.d/kibana.list
 
 // Commande grep
 grep -i ---> rend la recherche insensible à la casse
