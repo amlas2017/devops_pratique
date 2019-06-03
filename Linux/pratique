@@ -5,6 +5,8 @@ ubuntu -----> sudo cat /etc/lsb-release
 // Emplacement java
 update-java-alternatives -l
 
+// Pour vérifier si Systemd est installé, on tape :   ps -p 1
+
 // Liste de packages installés ubuntu pour les supprimer...
 $ dpkg --list
 
