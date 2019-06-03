@@ -1,2 +1,4 @@
+// Raccourcis : $ vagrant up; and vagrant ssh
+
 // Provisionner machine / cluster 
 https://github.com/justmeandopensource/vagrant
