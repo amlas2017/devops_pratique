@@ -1,4 +1,4 @@
-// 
+// cut -d: -f6 /etc/passwd   ----> affiche le 6eme champ du fichier /etc/passwd, dont le séparateur de champs est ":".
 
 // Infos du host (version/distribution d' OS):
 centos -----> sudo hostnamectl   
