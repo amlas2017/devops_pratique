@@ -67,6 +67,9 @@ grep -r ---> effectue une recherche récursive
    // lister  by user ------> ps -u
 sudo ps aux | grep java    ---->  ps java est-il  run?
 sudo ps a
+
+// Processus lancés par un user ----> ps -u utilisateur
+
 // Lister les ports
 sudo netstat -tulpn | grep LISTEN
 sudo netstat -tulpn | grep 80     // le process qui écoute sur le port 80
