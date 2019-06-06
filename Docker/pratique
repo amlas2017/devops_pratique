@@ -1,5 +1,5 @@
 // Script pour installer automatiquement docker
-curl -sSL https://get.docker.com/ | sh
+curl -sSL https://get.docker.com/ | sh    !!!! ERROR
 
 // Ajout d'un user au groupe docker
 sudo gpasswd -a vagrant docker   +   redémarrer
