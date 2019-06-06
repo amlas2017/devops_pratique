@@ -15,9 +15,10 @@ sudo journalctl --unit elasticsearch (log pour elasticsearch)
 // Liste de packages installés ubuntu pour les supprimer...
 $ dpkg --list
 
-//si une commande par erreur a été lancée en AVANT-PLAN et qu'on veut récupérer l'invite de commandes,il faudra faire dans l'ordre:
+// Si une commande par erreur a été lancée en AVANT-PLAN et qu'on veut récupérer l'invite de commandes,il faudra faire dans l'ordre:
 Ctrl + Z : pour mettre en pause le programme et récupérer l'invite de commandes ;
 bg : pour que le processus continue à tourner mais en arrière-plan.
+La commande fg renvoie un processus au premier plan (la commande jobs liste les processus qui tournent en arrière-plan).
 
 // Etat su système ---> taper w dans l'invite de commandes
 // La durée de fonctionnement de l'ordinateur -----> $ uptime  ---> plus d'infos 
