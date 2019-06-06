@@ -38,7 +38,7 @@ find  ~ -size +1G    ----->  tous le fichiers de plus de 1Go
 
 // Gestion des logs
 find  /var/log  -size +1M    ---> les logs qui ont +1Mo
-
+find -name "*.txt" -atime 1  ---> nombre de jours qui vous séparent du dernier accès à un fichier *.txt
 
 // Commande sed
   sed -i 's/mot_original/nouveau_mot/g' nom_fichier.txt  ----> (s = substitution, g = tous les mots de la ligne)
