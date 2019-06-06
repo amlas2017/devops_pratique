@@ -26,6 +26,8 @@ $ dpkg --list
 find -name "syslog*"
 find /var/log/ -name "syslog*"   ----> cherche à /var/log/
 find /var/log/ -name "syslog*" -type f  ----->  type est un fichier (d pour dossier)
+find  ~ -size +1G    ----->  tous le fichiers de plus de 1Go
+
 
 // Commenter des lignes VIM:
  Pour commenter les lignes 15 à 30 ---------------->  ESC + :15,30s/^/#   et pour décomenter  :15,30s/^#
@@ -35,7 +37,7 @@ find /var/log/ -name "syslog*" -type f  ----->  type est un fichier (d pour doss
 ......
 
 // Gestion des logs
-......
+find  /var/log  -size +1M    ---> les logs qui ont +1Mo
 
 
 // Commande sed
