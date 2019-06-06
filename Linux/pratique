@@ -18,6 +18,11 @@ $ dpkg --list
 // Etat su système ---> taper w dans l'invite de commandes
 // La durée de fonctionnement de l'ordinateur -----> $ uptime  ---> plus d'infos 
 
+// Execution de commandes en arrière plan avec &  -----> $ find / -name "*log" > sortiefind 2>&1 & (les erreurs vers sortie &1)
+// Avec l'option & ,le processus reste attaché à la console: si la console est fermée ou que l'user se déconnecte, le processus
+// sera automatiquement arrêté.Si on veut que le processus continue, il faut lancer la commande nohup :
+ $ nohup find / -name "*log"    ----> La sortie de la commande est par défaut redirigée vers un fichier nohup.out.
+ 
 // Commandes utiles VIM
 - copier une ligne : echap+v + curseur au début de ligne + Y   
 - coller une ligne : p ou P
