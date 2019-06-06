@@ -1,3 +1,5 @@
+// 
+
 // Infos du host (version/distribution d' OS):
 centos -----> sudo hostnamectl   
 ubuntu -----> sudo cat /etc/lsb-release
@@ -12,6 +14,8 @@ sudo journalctl --unit elasticsearch (log pour elasticsearch)
 
 // Liste de packages installés ubuntu pour les supprimer...
 $ dpkg --list
+
+// La durée de fonctionnement de l'ordinateur -----> $ uptime  ---> plus d'infos taper: $ w
 
 // Commandes utiles VIM
 - copier une ligne : echap+v + curseur au début de ligne + Y   
