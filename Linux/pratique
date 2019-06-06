@@ -22,7 +22,10 @@ $ dpkg --list
 - annuler une modification : echap + u  (undo)  et ctrl+r (redo)
 - rechercher un mot ----> /mot + entrée , l'occurence suivant n
 
-// Trouver un fichier avec find et grep -----> sudo find  | grep nom-fichier
+// Trouver un fichier avec find (find cherche dans le disque) 
+find -name "syslog"
+find /var/log/ -name "syslog"   ----> cherche à /var/log/
+find /var/log/ -name "syslog" -type f  ----->  type est un fichier (d pour dossier)
 
 // Commenter des lignes VIM:
  Pour commenter les lignes 15 à 30 ---------------->  ESC + :15,30s/^/#   et pour décomenter  :15,30s/^#
