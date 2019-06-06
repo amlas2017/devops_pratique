@@ -62,7 +62,7 @@ grep -r ---> effectue une recherche récursive
 /etc/group ---> le fichier de configuration des groupes
 /etc/shadow ---> le fichier de configuration des mots de passe
 
-// Lister les process
+// Lister les process (statique)
    // Lister all processes --->  ps -ax or -e
    // lister  by user ------> ps -u
 sudo ps aux | grep java    ---->  ps java est-il  run?
