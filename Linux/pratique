@@ -15,7 +15,8 @@ sudo journalctl --unit elasticsearch (log pour elasticsearch)
 // Liste de packages installés ubuntu pour les supprimer...
 $ dpkg --list
 
-// La durée de fonctionnement de l'ordinateur -----> $ uptime  ---> plus d'infos taper: $ w
+// Etat su système ---> taper w dans l'invite de commandes
+// La durée de fonctionnement de l'ordinateur -----> $ uptime  ---> plus d'infos 
 
 // Commandes utiles VIM
 - copier une ligne : echap+v + curseur au début de ligne + Y   
