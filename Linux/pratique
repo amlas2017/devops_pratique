@@ -69,6 +69,7 @@ sudo ps aux | grep java    ---->  ps java est-il  run?
 sudo ps a
 
 // Processus lancés par un user ----> ps -u utilisateur
+// Liste dynamique des processus   ---> top
 
 // Lister les ports
 sudo netstat -tulpn | grep LISTEN
