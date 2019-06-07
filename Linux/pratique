@@ -29,7 +29,7 @@ La commande fg renvoie un processus au premier plan (la commande jobs liste les 
  $ nohup find / -name "*log"    ----> La sortie de la commande est par défaut redirigée vers un fichier nohup.out.
  
 // Commandes utiles VIM
-- copier une ligne : echap+v + curseur au début de ligne + Y   
+- copier une ligne : echap+v + curseur au début de ligne + Y  et  y+w pour copier un mot
 - coller une ligne : p ou P
 - copier 5 ligne à partir du curseur ----> 5yy  et coller p
 - supprimer une ligne : echap + dd    ,   `echap + cc` supprime le contenu de la ligne
