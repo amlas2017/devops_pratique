@@ -1,1 +1,3 @@
+// Cluster de VM Centos.
 https://github.com/rootsongjc/kubernetes-vagrant-centos-cluster/
+Pour utiliser kubectl sans sudo : 
