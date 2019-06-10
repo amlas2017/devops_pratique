@@ -8,5 +8,7 @@ kubectl get nodes
 kubectl get pods
 kubectl create -f pods.yml   ---> créer un pod à partir d'un fichier yml
 kubectl describe pods nom_pod
+kubectl logs nom_pod
+kubectl exec -it nom_pod -- /bin/bash
 
 
