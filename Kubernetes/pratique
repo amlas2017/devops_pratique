@@ -1,5 +1,9 @@
-// Cluster de VM Centos.
+// Cluster de VM Centos -----> Cluster fonctionnel
 https://github.com/rootsongjc/kubernetes-vagrant-centos-cluster/
 Pour utiliser kubectl sans sudo :  
 [vagrant@node1 ~]$ export KUBERNETES_MASTER=http://node1:8080
+
+// Commandes Kubernetes :
+kubectl get nodes
+kubectl get pods
 
