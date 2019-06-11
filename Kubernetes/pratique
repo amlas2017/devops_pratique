@@ -11,7 +11,7 @@ Pour utiliser kubectl sans sudo :
 https://github.com/mjbright/ansible-kubernetes.git -----> s'installe mais les pods crées ne sont pas READY 1/1. 
              
 
-// Commandes Kubernetes :
+// Commandes Kubernetes : https://kubernetes.io/fr/docs/reference/kubectl/cheatsheet/
 kubectl get nodes
 kubectl get pods
 kubectl create -f pods.yml   ---> créer un pod à partir d'un fichier yml
