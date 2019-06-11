@@ -16,3 +16,5 @@ kubectl logs nom_pod
 kubectl exec -it nom_pod -- /bin/bash
 
 
+//Stateless & Statefull
+stateless = sans état ----> ne conserve pas d'informations liées à une requete ou connection.
