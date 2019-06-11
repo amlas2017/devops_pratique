@@ -5,7 +5,7 @@ Pour utiliser kubectl sans sudo :
 
 // Clusters Kubernetes/Ansible fonctionnels:
                ----> https://github.com/mjbright/ansible-kubernetes.git
-               ----> https://github.com/jeremievallee/kubernetes-vagrant-ansible.git (à confirmer!!!)
+             
 
 // Commandes Kubernetes :
 kubectl get nodes
