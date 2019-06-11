@@ -1,1 +1,12 @@
-// https://cloud.google.com/kubernetes-engine/docs/tutorials/persistent-disk?hl=fr
+// TP fonctionnel pour déployer wordpress & mysql avec persistent-disks
+
+https://cloud.google.com/kubernetes-engine/docs/tutorials/persistent-disk?hl=fr
+
+source ---> https://github.com/GoogleCloudPlatform/kubernetes-engine-samples/tree/master/wordpress-persistent-disks
+
+mysql.yaml : le fichier de configuration du déploiement MySQL
+mysql-service.yaml : le fichier de configuration du service MySQL
+mysql-volumeclaim.yaml : le fichier de configuration de PersistentVolumeClaim pour MySQL
+wordpress.yaml : le fichier de configuration du déploiement WordPress
+wordpress-service.yaml : le fichier de configuration du service WordPress
+wordpress-volumeclaim.yaml : le fichier de configuration de PersistentVolumeClaim pour WordPress
