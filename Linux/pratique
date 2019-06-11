@@ -31,12 +31,15 @@ La commande fg renvoie un processus au premier plan (la commande jobs liste les 
 // sera automatiquement arrêté.Si on veut que le processus continue, il faut lancer la commande nohup :
  $ nohup find / -name "*log"    ----> La sortie de la commande est par défaut redirigée vers un fichier nohup.out.
  
-// Commandes utiles VIM
+###################################################################################################################################
+                                                Commandes utiles VIM
+###################################################################################################################################
 - copier une ligne : echap+v + curseur au début de ligne + Y  et  y+w pour copier un mot
 - coller une ligne : p ou P
 - copier 5 ligne à partir du curseur ----> 5yy  et coller p
 - supprimer une ligne : echap + dd    ,   `echap + cc` supprime le contenu de la ligne
-- supprimer 5 lignes à partir du curseur --->5dd
+- supprimer 5 lignes à partir du curseur ---> 5dd
+- Pour effacer jusqu'à la fin de la ligne courante : d$
 - annuler une modification : echap + u  (undo)  et ctrl+r (redo)
 - rechercher un mot ----> /mot + entrée , l'occurence suivant n
 
