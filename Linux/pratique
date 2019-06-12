@@ -91,12 +91,17 @@ sudo ps a
 sudo netstat -tulpn | grep LISTEN
 sudo netstat -tulpn | grep 80     // le process qui écoute sur le port 80
 
+###################################################################################################################################
+                                                Commandes utiles lsof
+###################################################################################################################################
 // La commande lsof
 lsof -i  ----->   tous services internet TCP/UDP
 lsof -i tcp  ---->  tous services TCP
 lsof -i udp  ---->   tous services UDP
 lsof -i tcp:80    ----->  services TCP sur port 80
-Lister les process qui écoutent sur le port 8080 avec lsof  ------->  sudo lsof -n -i:8080 | grep LISTEN | awk '{ print $2 }'
+lsof -u toto   ---->  fichiers ouverts par l'utilisateur "toto"
+lsof +D /tmp      ------->   savoir qui utilise les fichiers d'un répertoire
+Les PID des process qui écoutent sur le port 8080 avec lsof  ------->  sudo lsof -n -i:8080 | grep LISTEN | awk '{ print $2 }'
 Tuer le process qui utilise le port 80    ------>  sudo kill $(sudo lsof -t -i :80)
 
 // systemctl <action> <nom_du_service>      ----->   systemctl start docker
