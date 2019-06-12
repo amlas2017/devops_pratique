@@ -84,6 +84,7 @@ grep -r ---> effectue une recherche récursive
    // lister  by user ------> ps -u
 sudo ps aux | grep java    ---->  ps java est-il  run?
 sudo ps a
+pstree   --------> arbre des processus
 
 // Processus lancés par un user ----> ps -u utilisateur
 // Liste dynamique des processus   ---> top  ou   htop
