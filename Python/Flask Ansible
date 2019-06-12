@@ -1,0 +1,64 @@
+// Déployer une application Flask via Ansible
+----> https://x-team.com/blog/how-to-get-started-with-ansible-playbooks/
+----> sudo git clone https://github.com/carolinux/flask_ansible.git
+----> Ajouter l'ip de l'agent dans hosts.conf
+----> sudo ansible-playbook flask.yml -i hosts.conf
+----> se connecter à la page : ip:5000
+****************************************************playbook*******************************************************************
+- hosts: all
+
+  vars:
+    LOCAL_PROJECT_HOME: "./hello"
+    PROJECT_HOME: "~/hello"
+    MAIN_PY: "hello.py"
+    PORT: 5000
+
+  tasks:
+
+  - name: Create remote directory
+    file: path={{PROJECT_HOME}} state=directory
+
+  - name: Copy project code to website server
+    copy: src={{item}} dest={{PROJECT_HOME}}
+    with_fileglob:
+     - "{{LOCAL_PROJECT_HOME}}/*"
+
+  - name: Install extra packages
+    yum: name=epel-release state=latest
+    sudo: yes
+
+  - name: Install lsof (for better process management)
+    yum: name=lsof state=latest
+    sudo: yes
+
+  - name: Install pip
+    yum: name=python-pip state=latest
+    sudo: yes
+
+  - name: Install virtualenv
+    pip: name=virtualenv
+    sudo: yes
+
+  - name: Create virtualenv for project
+    shell: virtualenv "{{ PROJECT_HOME }}/venv"
+           creates="{{ PROJECT_HOME }}/venv/bin/activate"
+
+  - name: Install Flask in the virtualenv
+    pip: name=flask virtualenv="{{ PROJECT_HOME }}/venv" # virtualenv_site_packages=yes
+
+  - name: Get process id running the webserver
+    shell: lsof -t -i:{{PORT}}
+    sudo: yes
+    ignore_errors: yes
+    register: pid
+
+  - name: Kill website if it's already running
+    shell: kill {{pid.stdout}}
+    when: pid.stdout != ""
+
+
+  - name: Launch flask website via virtualenv
+    shell: "source {{ PROJECT_HOME }}/venv/bin/activate; nohup python {{PROJECT_HOME}}/{{MAIN_PY}} {{PORT}} 2>&1 >/dev/null &"
+
+  - name: Wait for website port to become available
+    wait_for: port={{PORT}} delay=1
