@@ -55,6 +55,7 @@ find  ~ -size +1G    ----->  tous le fichiers de plus de 1Go
  Pour commenter les 23 lignes suivantes (par rapport au curseur) :ESC + :.,+23s/^/#  
 
 // Comande tail
+tail -f /var/log/access.log    ---->  affiche en mode debug ( après chaque execution) 
 ......
 
 // Gestion des logs
