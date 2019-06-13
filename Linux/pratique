@@ -12,6 +12,10 @@ update-java-alternatives -l
 // Synchronisation avec rsync:
 rsync  -vr ./dossier1/ ./dossier2
 
+// Modifier le compte d'un user avec usermod
+usermod modifie les fichiers d'administration des comptes du système selon les modifications qui ont été indiquées sur la ligne
+de commande : sudo usermod -g groupe-existant user-existant
+
 // Checker les logs pour un service : ----> journalctl --help
 sudo journalctl --unit elasticsearch (log pour elasticsearch)
 
