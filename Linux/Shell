@@ -1,6 +1,12 @@
 // Variables spéciales: ( #! /bin/bash )
 sh ./mon-script.sh param1 param2
-echo "Il y a $# arguments passés au script"
+echo "Il y a $# arguments passés au script"  
+       
+       -----> exemple d'usgae : if [ $# -lt 2 ]; then     
+                                   echo "Erreur. Nombre d'arguments doit etre superieur à 2 !!!"
+                                   exit 1
+                                fi
+
 echo "Le script se nomme $0"
 echo "La valeur du premier argument : $1"
 echo "La valeur du second argument : $2"
