@@ -15,7 +15,7 @@
 
   tasks:
 
-  - name: Create remote directory
+  - name: Create remote directory                  ----> le dossier est crée dans /root
     file: path={{PROJECT_HOME}} state=directory
 
   - name: Copy project code to website server
