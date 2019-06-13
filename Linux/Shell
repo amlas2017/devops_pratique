@@ -11,3 +11,20 @@ echo "Le script se nomme $0"
 echo "La valeur du premier argument : $1"
 echo "La valeur du second argument : $2"
 echo "Les valeurs de tous les arguments : $*"
+
+********************************************************************************************
+                                    LA COMMANDE TEST
+********************************************************************************************
+
+// Si un fichier existe:
+$ test -f /etc/group  -----> ou  [ -f /etc/groupe ]
+$ echo $?
+
+// Si un dossier existe:
+$ [ -d /etc/init.d ]
+$ echo $?
+
+//Le fichier contenu dans la variable file n'est pas un répertoire ou n'existe pas
+$ file=/etc/group
+$ test -d $file
+$ echo $?
