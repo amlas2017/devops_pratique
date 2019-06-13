@@ -1,0 +1,6 @@
+// Variables spéciales: ( #! /bin/bash )
+echo "Il y a $# arguments passés au script"
+echo "Le script se nomme $0"
+echo "La valeur du premier argument : $1"
+echo "La valeur du second argument : $2"
+echo "Les valeurs de tous les arguments : $*"
