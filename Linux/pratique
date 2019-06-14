@@ -36,7 +36,7 @@ La commande fg renvoie un processus au premier plan (la commande jobs liste les 
  $ nohup find / -name "*log"    ----> La sortie de la commande est par défaut redirigée vers un fichier nohup.out.
  
 ###################################################################################################################################
-                                                     Commandes utiles VIM
+                                                     Commandes utiles VIM   ----> vimtutor fr
 ###################################################################################################################################
 - copier une ligne : echap+v + curseur au début de ligne + Y  et  y+w pour copier un mot
 - coller une ligne : p ou P
