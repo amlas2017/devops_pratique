@@ -137,3 +137,5 @@ $ ln -s   /emplacement/nom_du_fichier_source /emplacement/nom_du_lien (chemin ab
 .???....   >> /dev/null
 
 // verbose = affiche ce qu'il fait
+
+// Les commandes entre les `commande1 commande2` permettent d'insérer le résultat d'une commande dans une autre commande. 
