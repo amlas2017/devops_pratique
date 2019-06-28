@@ -22,7 +22,7 @@ echo "Les valeurs de tous les arguments : $*"
 ********************************************************************************************
 
 // Si un fichier existe:
-$ test -f /etc/group  -----> ou  [ -f /etc/groupe ]
+$ test -f /etc/group  -----> ou  [ -f /etc/group ]
 $ echo $?
 
 // Si un dossier existe:
