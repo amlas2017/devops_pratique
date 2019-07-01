@@ -112,6 +112,7 @@ lsof -u toto   ---->  fichiers ouverts par l'utilisateur "toto"
 lsof +D /tmp      ------->   savoir qui utilise les fichiers d'un répertoire
 Les PID des process qui écoutent sur le port 8080 avec lsof  ------->  sudo lsof -n -i:8080 | grep LISTEN | awk '{ print $2 }'
 Tuer le process qui utilise le port 80    ------>  sudo kill $(sudo lsof -t -i :80)
+                                    ou    ------> sudo lsof -i :80 | awk 'NR>1 { print $2 } | xargs sudo kill  
 
 // systemctl <action> <nom_du_service>      ----->   systemctl start docker
 
