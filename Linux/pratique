@@ -46,6 +46,7 @@ La commande fg renvoie un processus au premier plan (la commande jobs liste les 
 - Pour effacer jusqu'à la fin de la ligne courante : d$
 - annuler une modification : echap + u  (undo)  et ctrl+r (redo)
 - rechercher un mot ----> /mot + entrée , l'occurence suivant n
+- Chercher et remplacer --->  :%s/mot-cherché/nouveau-mot/g
 ###################################################################################################################################
                                                         Commande FIND
 ###################################################################################################################################
