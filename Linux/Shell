@@ -33,3 +33,5 @@ $ echo $?
 $ file=/etc/group
 $ test -d $file
 $ echo $?
+
+// boucle for dans un terminal:   for i in {1..10}; do echo $i; done    ----> attention aux virgules
