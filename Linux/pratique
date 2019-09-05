@@ -152,6 +152,17 @@ permettant de repérer plus rapidement et efficacement les défaillances d'ordin
 particularité d'en étendre les fonctionnalités en permettant, notamment, de filtrer sur des champs, de filtrer à l'aide 
 d'expressions régulières et l'utilisation du protocole TCP de la couche transport.
 
+Les fonctionnalités principales :
+* il remplace facilement syslog (les règles de syslog peuvent être simplement copiées dans /etc/rsyslog) 2
+* il peut écrire les événements dans une base de données (MySQL ou postgreSQL)
+* il gère la rotation automatique des fichiers
+* il peut mettre en tampon (sous forme de fichiers) des événements
+* il gère GSS-API et TLS 2
+* il peut être utilisé comme un relais et peut être configuré pour enregistrer les points de passage
+* il peut utiliser son propre protocole réseau : RELP (Reliable Event Logging Protocol) qui offre une meilleure garantie de 
+  réception des événements par le serveur.
+* il peut utiliser un format de date complet (incluant l'année, contrairement au syslog de base qui n'inclut jamais l'année) et
+  pouvant être précis jusqu'au millième de seconde (contrairement à syslog qui n'est précis qu'à la seconde).
 
 
 
