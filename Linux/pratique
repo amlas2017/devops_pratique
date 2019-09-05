@@ -145,7 +145,7 @@ $ ln -s   /emplacement/nom_du_fichier_source /emplacement/nom_du_lien (chemin ab
 
 // Les commandes entre les `commande1 commande2` permettent d'insérer le résultat d'une commande dans une autre commande. 
 
-************************************************* RSYSLOG **********************************************************************
+****************************************************** RSYSLOG ****************************************************************
 Rsyslog est un logiciel libre utilisé sur des systèmes d'exploitation de type Unix (Unix, Linux) transférant les messages des 
 journaux d'événements sur un réseau IP. Rsyslog implémente le protocole basique syslog - qui centralise les journaux d'événements,
 permettant de repérer plus rapidement et efficacement les défaillances d'ordinateurs présents sur un réseau. Il présente la 
@@ -164,6 +164,8 @@ Les fonctionnalités principales :
 * il peut utiliser un format de date complet (incluant l'année, contrairement au syslog de base qui n'inclut jamais l'année) et
   pouvant être précis jusqu'au millième de seconde (contrairement à syslog qui n'est précis qu'à la seconde).
 
-
+Rsyslog implémente syslog. Ainsi les outils utilisés pour syslog restent valable. En particulier l'utilitaire logger.
+     $ logger System rebooted
+     # tail -f /var/log/syslog
 
 
