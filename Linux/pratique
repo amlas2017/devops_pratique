@@ -19,6 +19,11 @@ rsync  -vr ./dossier1/ ./dossier2
 usermod modifie les fichiers d'administration des comptes du système selon les modifications qui ont été indiquées sur la ligne
 de commande : sudo usermod -g groupe-existant user-existant
 
+//**************************************************** SUID  *******************************************************************
+Il permet de faire en sorte de lancer un programme en tant que l'user qui possède le fichier et non en tant que celui qui lance
+le fichier.  ---->  chmod 4755 nom_du_fichier   ,  setuid=4
+             ---->  chmod 6755 nom_du_fichier   , 6 = setuid(4) + setgid(2)
+
 // Checker les logs pour un service : ----> journalctl --help
 sudo journalctl --unit elasticsearch (log pour elasticsearch)
 
