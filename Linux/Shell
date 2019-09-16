@@ -59,5 +59,9 @@ until [  $COUNTER -lt 10 ]; do
     let COUNTER-=1
 done
 
+// IF...THEN
+if [ test ]; then
+    echo "le teste est passé"
+fi
 
 
