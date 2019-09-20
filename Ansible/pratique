@@ -46,3 +46,21 @@
         ssh_key_bits: 2048
         ssh_key_file: .ssh/id_rsa
 
+// Les tags
+Lorsque votre playbook est assez gros et que vous souhaitez en tester qu’une partie, vous n’allez pas jouer tout le playbook. 
+Pour cela, vous allez une solution : les tags. Vous pouvez appliquer les tags à des plays ou des tasks (tâches). Ils s’utilisent de la manière suivante :
+exemple:
+---
+...
+- name: install nginx
+        yum:
+          name: nginx
+          state: present
+        tags:
+          - installation
+...          
+          
+----> ansible-playbook -i hosts deploy.yml --tags "installation"  
+--> En jouons le playbook, on ne verra que la partie installation(la task « install nginx » taggé « installation » s'execute.
+
+
