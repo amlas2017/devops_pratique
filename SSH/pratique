@@ -2,3 +2,33 @@ L'authentification par clé fonctionne grâce à 3 composants :
   ->  Une clé publique : elle sera exportée sur chaque hôte sur lequel on souhaite pouvoir se connecter.
   ->  Une clé privée : elle permet de prouver son identité aux serveurs.
   ->  Une passphrase : Permet de sécuriser la clé privée.
+
+$ ssh-keygen   ----->  Deux fichiers ont été créés (dans le dossier ~/.ssh/) :
+    a) id_rsa : contient la clé privée et ne doit pas être dévoilé ou mis à disposition.
+    b) id_rsa.pub : contient la clé publique, c'est elle qui sera mise sur les serveurs dont l'accès est voulu.
+    
+Le fichier de configuration est: /etc/ssh/sshd_config     
+
+Envoi de la clé publique aux serveurs: (L'authentification par mot de passe va être utilisée)
+ 
+ -> Méthode 1: 
+          [hass@machine ~]$ cat ~/.ssh/id_rsa.pub | ssh user@ip_machine "cat - >> ~/.ssh/authorized_keys"
+          user@ip_machine's password:
+          
+ -> Méthode 2:
+ 
+          [hass@machine ~]$ scp ~/.ssh/id_rsa.pub user@ip_machine:/tmp
+          user@ip_machine's password:
+          id_rsa.pub                                            100%  609     0.6KB/s   00:00
+          [hass@machine ~]$ ssh user@ip_machine
+          [hass@machine ~]$ cat /tmp/id_rsa.pub >> /root/.ssh/authorized_keys
+          [hass@machine ~]$ rm /tmp/id_rsa.pub
+
+ -> Méthode 3: Méthode recommandée
+ 
+          [hass@machine ~]$ ssh-copy-id -i ~/.ssh/id_rsa.pub user@ip_machine
+          root@ip_machine's password:
+          Now try logging into the machine, with "ssh 'user@ip_machine'", and check in:
+          .ssh/authorized_keys
+
+ 
