@@ -1,0 +1,4 @@
+L'authentification par clé fonctionne grâce à 3 composants :
+  ->  Une clé publique : elle sera exportée sur chaque hôte sur lequel on souhaite pouvoir se connecter.
+  ->  Une clé privée : elle permet de prouver son identité aux serveurs.
+  ->  Une passphrase : Permet de sécuriser la clé privée.
