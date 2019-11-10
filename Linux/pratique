@@ -55,6 +55,10 @@ La commande fg renvoie un processus au premier plan (la commande jobs liste les 
 - annuler une modification : echap + u  (undo)  et ctrl+r (redo)
 - rechercher un mot ----> /mot + entrée , l'occurence suivant n
 - Chercher et remplacer --->  :%s/mot-cherché/nouveau-mot/g
+// Commenter des lignes VIM:
+- Pour commenter les lignes 15 à 30 ---------------->  ESC + :15,30s/^/#   et pour décomenter  :15,30s/^#
+- Pour commenter les 23 lignes suivantes (par rapport au curseur) :ESC + :.,+23s/^/#  
+
 ###################################################################################################################################
                                                         Commande FIND
 ###################################################################################################################################
@@ -64,11 +68,6 @@ find -name "syslog*"
 find /var/log/ -name "syslog*"   ----> cherche à /var/log/
 find /var/log/ -name "syslog*" -type f  ----->  type est un fichier (d pour dossier)
 find  ~ -size +1G    ----->  tous le fichiers de plus de 1Go
-
-
-// Commenter des lignes VIM:
- Pour commenter les lignes 15 à 30 ---------------->  ESC + :15,30s/^/#   et pour décomenter  :15,30s/^#
- Pour commenter les 23 lignes suivantes (par rapport au curseur) :ESC + :.,+23s/^/#  
 
 // Comande tail
 tail -f /var/log/access.log    ---->  affiche en mode debug ( après chaque execution) 
