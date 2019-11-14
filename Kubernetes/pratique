@@ -1,3 +1,6 @@
+// Cluster fonctionnel ( vagrant + ansible )
+   https://www.devopssec.fr/article/creer-cluster-kubernetes-multi-noeud-vagrant-ansible
+
 // Exemple pratique pour déployer wordpress+mysql dans k8s:
 ------>  https://cloud.google.com/kubernetes-engine/docs/tutorials/persistent-disk?hl=fr
 
@@ -7,8 +10,6 @@ https://github.com/rootsongjc/kubernetes-vagrant-centos-cluster/
 Pour utiliser kubectl sans sudo :  
 [vagrant@node1 ~]$ export KUBERNETES_MASTER=http://node1:8080
 
-// Clusters Kubernetes/Ansible fonctionnels:
-https://github.com/mjbright/ansible-kubernetes.git -----> s'installe mais les pods crées ne sont pas READY 1/1. 
              
 
 // Commandes Kubernetes : https://kubernetes.io/fr/docs/reference/kubectl/cheatsheet/
