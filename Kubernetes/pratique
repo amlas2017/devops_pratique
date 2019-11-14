@@ -1,7 +1,7 @@
 // Cluster fonctionnel ( vagrant + ansible )
    https://www.devopssec.fr/article/creer-cluster-kubernetes-multi-noeud-vagrant-ansible
    
-   // Pour interroger le cluster K8S depuis le terminal:
+// Pour interroger le cluster K8S depuis le terminal:
    [hass@hass-ThinkPad k8s-cluster-vagrant-ansible]$ scp -r vagrant@192.168.50.10:/home/vagrant/.kube $HOME/
    
    [hass@hass-ThinkPad k8s-cluster-vagrant-ansible]$ kubectl get nodes
