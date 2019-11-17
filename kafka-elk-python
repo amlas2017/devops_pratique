@@ -1,2 +1,0 @@
-// TP --> Récupérer un flux (généré par un script python) par kafka , le filtrer par logstash , l'intégrer dans elastic et la
-// visualisation via kibana  ---->   https://blog.ippon.fr/2019/02/12/activity-monitor-3/
