@@ -19,7 +19,13 @@ echo "Les valeurs de tous les arguments : $*"
 
 ********************************************************************************************
                                     LA COMMANDE TEST
+Tests sur les fichiers ([ -f /etc/group ])
+Tests sur les chaines de caractères ([ -z "$str1" ])
+Tests sur les nombres ([ $int2 -lt $int3 ])
+Les opérateurs ([ -d monPremierScript.sh -a -x monPremierScript.sh ])
 ********************************************************************************************
+// Si la variable $str est vide : [ -z "$str" ]
+// Si la variable $str1 n'est pas vide : [ -n "$str1" ]
 
 // Si un fichier existe:
 $ test -f /etc/group  -----> ou  [ -f /etc/group ]
