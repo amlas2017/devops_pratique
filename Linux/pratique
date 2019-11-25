@@ -12,8 +12,14 @@ update-java-alternatives -l
 
 // Pour vérifier si Systemd est installé, on tape :   ps -p 1
 
-// Synchronisation avec rsync:
-rsync  -vr ./dossier1/ ./dossier2
+#################################################################################################################################
+                                                Synchronisation avec rsync 
+#################################################################################################################################
+$ rsync  -vr ./dossier1/ ./dossier2
+$ rsync chemin/vers/source chemin/vers/cible
+$ rsync -auvx /home/hadoop/.bashrc hadoop-newdatanode:/home/hadoop/      ( Copy Hadoop folder to Slave Servers )
+L'option -a, mode archivage, permet de copier de manière récursive, de préserver les permissions et de ne pas suivre les liens 
+symboliques
 
 // Modifier le compte d'un user avec usermod
 usermod modifie les fichiers d'administration des comptes du système selon les modifications qui ont été indiquées sur la ligne
