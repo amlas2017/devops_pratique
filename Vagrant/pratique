@@ -1,4 +1,8 @@
-
-
 // Provisionner machine / cluster 
 https://github.com/justmeandopensource/vagrant
+
+// Copier un fichier de la machine HOST à VM vagrant
+// Installer le plugin vagrant-scp
+$ vagrant plugin install vagrant-scp
+// vagrant scp <some_local_file_or_dir> [vm_name]:<somewhere_on_the_vm>
+$ sudo vagrant scp /home/hass/*.sh oraclekafkaetl:/home/vagrant/
