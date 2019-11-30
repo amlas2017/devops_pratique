@@ -61,6 +61,6 @@ exemple:
 ...          
           
 ----> ansible-playbook -i hosts deploy.yml --tags "installation"  
---> En jouons le playbook, on ne verra que la partie installation(la task « install nginx » taggé « installation » s'execute.
+--> En jouant le playbook, on ne verra que la partie installation(la task « install nginx » taggé « installation » s'execute.
 
 
