@@ -1,3 +1,6 @@
+// debug : si vagrant up génère des erreurs , supprimer le dossier  ~/.vagrant.d/data/ (qui contient des fichiers *.lock)
+// Utiliser vagrant up sans sudo
+
 // Provisionner machine / cluster 
 https://github.com/justmeandopensource/vagrant
 
