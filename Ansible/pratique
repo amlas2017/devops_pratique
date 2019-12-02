@@ -1,3 +1,6 @@
+// Préparer l'environnement/cluster pour ansible :
+   ----> https://www.linuxtricks.fr/wiki/ansible-automatiser-la-gestion-de-serveurs
+   
 // Espace disque d'un noeud
 [vagrant@server00 ~]$ ansible server01 -a "df -h"      -----> disque info.
 [vagrant@server00 ~]$ ansible server01 -a "free -m"    -----> mémoire info.
