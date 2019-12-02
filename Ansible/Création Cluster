@@ -1,3 +1,6 @@
+// Cluster Ansible fonctionnel : droonga-ubuntu-trusty  : 
+       ----->     http://droonga.org/tutorial/1.0.6/virtual-machines-for-experiments/
+
 // créer un mini datacenter de test avec conteneurs docker :
 
 !!!!! Pour utiliser ce script, il faudrait générer les clés ssh dans les containers!!!!!
