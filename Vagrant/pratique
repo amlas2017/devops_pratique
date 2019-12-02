@@ -1,3 +1,6 @@
+// Pour se connecter à node1 ( $ ssh node1 ), on tape: $ vagrant ssh-config node1 >> ~/.ssh/config
+  ( node1 doit etre défini dans /etc/hosts)
+  
 // debug : si vagrant up génère des erreurs , supprimer le dossier  ~/.vagrant.d/data/ (qui contient des fichiers *.lock)
 // Utiliser vagrant up sans sudo
 
