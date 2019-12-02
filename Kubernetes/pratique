@@ -1,12 +1,10 @@
-// Cluster Kubernetes fonctionnel : -----> https://github.com/rootsongjc/kubernetes-vagrant-centos-cluster
-
-
-// Cluster vagrant : https://github.com/mesoshq/vagrant-cluster-centos/blob/master/Vagrantfile
-
-
-
 // Cluster fonctionnel ( vagrant + ansible )
    https://www.devopssec.fr/article/creer-cluster-kubernetes-multi-noeud-vagrant-ansible
+   
+   
+// Cluster Kubernetes fonctionnel : -----> https://github.com/rootsongjc/kubernetes-vagrant-centos-cluster
+
+// Cluster vagrant : https://github.com/mesoshq/vagrant-cluster-centos/blob/master/Vagrantfile
    
 // Pour interroger le cluster K8S depuis le terminal:
    [hass@hass-ThinkPad k8s-cluster-vagrant-ansible]$ scp -r vagrant@192.168.50.10:/home/vagrant/.kube $HOME/
