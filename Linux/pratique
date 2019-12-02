@@ -7,6 +7,9 @@
 centos -----> sudo hostnamectl   
 ubuntu -----> sudo cat /etc/lsb-release
 
+// Libérer le port 8080
+  $ sudo fuser -k -n tcp 8080
+
 // Emplacement java
 update-java-alternatives -l
 
