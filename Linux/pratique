@@ -1,4 +1,13 @@
 
+#################################################################################################################################
+                                                            Systemd 
+#################################################################################################################################
+// Pour vérifier si Systemd est installé, on tape :   ps -p 1
+// Tous les services actifs : $ systemctl list-units --type=service
+// Si un service est actif : $ systemctl is-active mon_service
+
+
+
 // L'IP de la machine  ------> hostname -I
 
 // cut -d: -f6 /etc/passwd   ----> affiche le 6eme champ du fichier /etc/passwd, dont le séparateur de champs est ":".
