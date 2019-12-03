@@ -1,0 +1,8 @@
+Un package Kubernetes est appelé Charts dans Helm.
+Un Chart contient un lot d’informations nécessaires pour créer une instance d’application Kubernetes.
+La Config contient les informations dynamiques concernant la configuration d’un Chart
+Une Release est une instance existante sur le cluster, combinée avec une Config spécifique.
+
+//
+Helm permet donc de déployer des applications / stacks complètes en utilisant un système de templating et de dépendances afin 
+d’éviter la duplication et avoir ainsi une arborescence cohérente pour nos fichiers de configurations.
