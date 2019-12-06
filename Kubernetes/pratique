@@ -1,3 +1,6 @@
+// Cluster fonctionnel ( vagrant + centos )
+   https://github.com/justmeandopensource/kubernetes
+
 // Cluster fonctionnel ( vagrant + ansible )
    https://www.devopssec.fr/article/creer-cluster-kubernetes-multi-noeud-vagrant-ansible
    
