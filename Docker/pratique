@@ -3,6 +3,9 @@ curl -sSL https://get.docker.com/ | sh    !!!! ERROR
 
 // Addresse IP du host (interface docker0)
 export DOCKERHOST=$(ifconfig docker0 | grep 'inet ' | cut -d '' -f2 | awk '{ print $2}')
+// ou (si ifconfig n'est pas installé)
+export DOCKERHOST=$(ip a | grep docker0 | grep 'inet ' | cut -d '' -f2 | awk '{ print $2}')
+
 
 // Ajout d'un user au groupe docker
 sudo gpasswd -a vagrant docker   +   redémarrer
