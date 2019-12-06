@@ -25,7 +25,8 @@ https://github.com/rootsongjc/kubernetes-vagrant-centos-cluster/
 Pour utiliser kubectl sans sudo :  
 [vagrant@node1 ~]$ export KUBERNETES_MASTER=http://node1:8080
 
-             
+// logs ... plus d'infos sur le cycle de vie du pod
+kubectl logs -f nompod-pod
 
 // Commandes Kubernetes : https://kubernetes.io/fr/docs/reference/kubectl/cheatsheet/
 kubectl get nodes
