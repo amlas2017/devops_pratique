@@ -6,3 +6,6 @@ Une Release est une instance existante sur le cluster, combinée avec une Config
 //
 Helm permet donc de déployer des applications / stacks complètes en utilisant un système de templating et de dépendances afin 
 d’éviter la duplication et avoir ainsi une arborescence cohérente pour nos fichiers de configurations.
+
+// Install + init helm
+ https://www.digitalocean.com/community/tutorials/how-to-install-software-on-kubernetes-clusters-with-the-helm-package-manager
