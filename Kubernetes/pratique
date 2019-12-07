@@ -1,3 +1,6 @@
+// Les utilitaires kubens (pour namespace) et kubectx (pour le context)
+https://blog.zwindler.fr/2018/08/28/utiliser-kubectx-kubens-pour-changer-facilement-de-context-et-de-namespace-dans-kubernetes/
+
 // Cluster fonctionnel ( vagrant + centos )
    https://github.com/justmeandopensource/kubernetes
 
