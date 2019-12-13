@@ -12,7 +12,7 @@ https://blog.zwindler.fr/2018/08/28/utiliser-kubectx-kubens-pour-changer-facilem
 
 // Cluster vagrant : https://github.com/mesoshq/vagrant-cluster-centos/blob/master/Vagrantfile
    
-// Pour interroger le cluster K8S depuis le terminal:
+// Pour interroger le cluster K8S depuis le terminal: ( Il faut installer kubectl auparavant !!!!!)
    [hass@hass-ThinkPad k8s-cluster-vagrant-ansible]$ scp -r vagrant@192.168.50.10:/home/vagrant/.kube $HOME/
    
    [hass@hass-ThinkPad k8s-cluster-vagrant-ansible]$ kubectl get nodes
