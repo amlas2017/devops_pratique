@@ -2,8 +2,10 @@
 est la fonction qui permet aux users de s'authentifier une seule fois pour toute la durée d'une session, indépendamment du nombre
 d'applications qui nécessitent une authentification. Ils peuvent alors accéder à leurs données en toute transparence, sans 
 contrainte de ressaisie d'un nouveau couple nom d’utilisateur/mot de passe.
+// à un serveur d’identité ( Identity Provider / IdP ) 
 
-// Fédération de d'identié ----> SAML (Security Assertion Markup Language) ou  OpenId Connect.
+// Fédération/délégation de l'identié du user à un serveur d’identité (Identity Provider) :
+             ---->  2 protocoles : SAML (Security Assertion Markup Language) ou  OpenId Connect.
  
 // OpenId Connect (OIDC) = est un standard d'identification qui vient se positionner au dessus d'OAuth 2.0.
 --> OpenId Connect délégue l'authentification des users à un service indépendant et sort complètement du périmètre de l'application.
