@@ -5,3 +5,7 @@ contrainte de ressaisie d'un nouveau couple nom d’utilisateur/mot de passe.
 
 // OpenId Connect (OIDC) = est un standard d'identification qui vient se positionner au dessus d'OAuth 2.0.
 --> OpenId Connect délégue l'authentification des users à un service indépendant et sort complètement du périmètre de l'application.
+OpenID Connect, publié en 2014 [OIDC], est une évolution du standard OpenID et s'appuie sur le protocole OAuth 2.0 [OAUTH] en y ajoutant une couche d'authentification.
+
+OpenID Connect repose sur le standard JSON Web Token (JWT) pour échanger des informations d'identité ou toute autre information 
+pertinente pour le FS. 
