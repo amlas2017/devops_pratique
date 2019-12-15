@@ -8,4 +8,4 @@ contrainte de ressaisie d'un nouveau couple nom d’utilisateur/mot de passe.
 OpenID Connect, publié en 2014 [OIDC], est une évolution du standard OpenID et s'appuie sur le protocole OAuth 2.0 [OAUTH] en y ajoutant une couche d'authentification.
 
 OpenID Connect repose sur le standard JSON Web Token (JWT) pour échanger des informations d'identité ou toute autre information 
-pertinente pour le FS. 
+pertinente pour le fournisseur de service. 
