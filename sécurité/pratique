@@ -3,6 +3,8 @@ est la fonction qui permet aux users de s'authentifier une seule fois pour toute
 d'applications qui nécessitent une authentification. Ils peuvent alors accéder à leurs données en toute transparence, sans 
 contrainte de ressaisie d'un nouveau couple nom d’utilisateur/mot de passe.
 
+// fédération de d'identié ----> SAML (Security Assertion Markup Language) ou  OpenId Connect.
+ 
 // OpenId Connect (OIDC) = est un standard d'identification qui vient se positionner au dessus d'OAuth 2.0.
 --> OpenId Connect délégue l'authentification des users à un service indépendant et sort complètement du périmètre de l'application.
 OpenID Connect, publié en 2014 [OIDC], est une évolution du standard OpenID et s'appuie sur le protocole OAuth 2.0 [OAUTH] en y ajoutant une couche d'authentification.
