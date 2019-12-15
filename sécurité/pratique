@@ -6,6 +6,10 @@ contrainte de ressaisie d'un nouveau couple nom d’utilisateur/mot de passe.
 
 // Fédération/délégation de l'identié du user à un serveur d’identité (Identity Provider) :
              ---->  2 protocoles : SAML (Security Assertion Markup Language) ou  OpenId Connect.
+             
+// OAuth2 est un protocole de délégation d’autorisation. Spring Security 4 en particulier ne propose qu’une authentification via 
+OAuth2, Spring Security 5 va pallier cela en supportant OpenId Connect.           
+             
  
 // OpenId Connect (OIDC) = est un standard d'identification qui vient se positionner au dessus d'OAuth 2.0.
 --> OpenId Connect délégue l'authentification des users à un service indépendant et sort complètement du périmètre de l'application.
