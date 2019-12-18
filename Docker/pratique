@@ -7,9 +7,9 @@ export DOCKERHOST=$(ifconfig docker0 | grep 'inet ' | cut -d '' -f2 | awk '{ pri
 export DOCKERHOST=$(ip a | grep docker0 | grep 'inet ' | cut -d '' -f2 | awk '{ print $2}')
 
 
-// Ajout d'un user au groupe docker
-sudo gpasswd -a vagrant docker   +   redémarrer
-ou  usermod -aG docker vagrant   +   redémarrage
+// Ajout d'un user (vagrant) au groupe docker 
+sudo gpasswd -a vagrant docker ( sudo gpasswd -a $USER docker )  +   redémarrer
+ou  usermod -aG docker vagrant  ( sudo usermod -aG docker $USER ) +   redémarrage
 
 // docker commit
 docker commit <CONTAINER ID> <new name for the container>  
