@@ -1,4 +1,5 @@
 // iptables - firewall   ( https://www.it-connect.fr/centos-7-utilisation-et-configuration-de-firewalld/ )
+// un firewalla gère des zones, des services, des ports et des règles ipset (blacklist...), ainsi que des modules spéciaux.
 // Ajouter un port 1521       ---->   $ firewall-cmd --zone=public --add-port=1521/tcp
 // Centos interface graphique firewall ---------->  firewall-config 
 
