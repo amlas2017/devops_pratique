@@ -1,5 +1,6 @@
 // iptables - firewall   ( https://www.it-connect.fr/centos-7-utilisation-et-configuration-de-firewalld/ )
 // Ajouter un port 1521       ---->   $ firewall-cmd --zone=public --add-port=1521/tcp
+// Centos interface graphique firewall ---------->  firewall-config 
 
 // SSO (Single Sign-On): authentification unique
 est la fonction qui permet aux users de s'authentifier une seule fois pour toute la durée d'une session, indépendamment du nombre
