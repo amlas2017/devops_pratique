@@ -30,7 +30,7 @@ Envoi de la clé publique aux serveurs: (L'authentification par mot de passe va 
           root@ip_machine's password:
           Now try logging into the machine, with "ssh 'user@ip_machine'", and check in:
           .ssh/authorized_keys
-
+=================================================================================================================================
 // Résoudre des problèmes de connection ssh (erreur : Permission denied (publickey,gssapi-keyex,gssapi-with-mic))
 Dans /etc/ssh/sshd_config, on activeces lignes: 
            PasswordAuthentication yes     <----------------
