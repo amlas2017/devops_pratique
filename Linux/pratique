@@ -101,8 +101,15 @@ tail -f /var/log/access.log    ---->  affiche en mode debug ( après chaque exec
 find  /var/log  -size +1M    ---> les logs qui ont +1Mo
 find -name "*.txt" -atime 1  ---> nombre de jours qui vous séparent du dernier accès à un fichier *.txt
 
-// Commande sed
+##################################################################################################################################
+                                                         Commande sed
+##################################################################################################################################
   sed -i 's/mot_original/nouveau_mot/g' nom_fichier.txt  ----> (s = substitution, g = tous les mots de la ligne)
+  
+  sed -e --> commande uniligne
+  sed -f fichier --> passage de commande par un script
+  sed -i --> modifie directement le fichier source au lieu de rediriger vers la sortie standard
+  
   
 // Commande tee : la sortie de la 1ère commade est stockée dans un fichier.Avec l'option -a , tee n'écrasera pas l'ancien fichier.
 echo "deb http://packages.elastic.co/kibana/4.6/debian stable main" | sudo tee -a /etc/apt/sources.list.d/kibana.list
