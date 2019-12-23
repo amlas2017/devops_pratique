@@ -142,9 +142,15 @@ pstree   --------> arbre des processus
 // Processus lancés par un user ----> ps -u utilisateur
 // Liste dynamique des processus   ---> top  ou   htop
 
+###################################################################################################################################
+                                                Commandes netstat  &  ss (sockets statistics)
+##################################################################################################################################
 // Lister les ports
 sudo netstat -tulpn | grep LISTEN
 sudo netstat -tulpn | grep 80     // le process qui écoute sur le port 80
+
+sudo ss -ntlup | grep 2181  ---->  La commande ss obtient ses informations directement à partir de l'espace noyau (donc déjà plus
+                                   rapide que l’agrégation de données depuis des fichiers)
 
 ###################################################################################################################################
                                                 Commandes utiles lsof
