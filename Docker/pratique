@@ -1,6 +1,10 @@
 // Script pour installer automatiquement docker
 curl -sSL https://get.docker.com/ | sh    !!!! ERROR
 
+// Espace disque utilisé par les containers et les images:
+$ docker system df -v
+// Infos sur docker   ------>  $ docker system info
+
 // Addresse IP du host (interface docker0)
 export DOCKERHOST=$(ifconfig docker0 | grep 'inet ' | cut -d '' -f2 | awk '{ print $2}')
 // ou (si ifconfig n'est pas installé)
