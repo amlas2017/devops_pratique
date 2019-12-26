@@ -6,11 +6,11 @@ $ docker system df -v
 // Infos sur docker   ------>  $ docker system info
 
 // Volumes docker
-$ docker run -d --rm --name devtest -v "$(pwd)"/target:/app:ro -p 80:80 nginx   
+$ docker run -d --rm --name nginx -v "$(pwd)"/nginx:/var/log/nginx -p 80:80 nginx
 meme chose avec --mount          
-$  docker run -d --rm --name devtest --mount type=bind,source="$(pwd)"/target,target=/app,readonly nginx  
-----> target qui n'existe pas sera créer par docker , ro=read only
-----> si le dossier destination à mapper est un dossier système ( /var/log, ...), le container sera créer mais pas fonctionnel.
+$  docker run -d --rm --name nginx --mount type=bind,source="$(pwd)"/nginx,target=/var/log/nginx,readonly nginx.  
+----> /nginx  qui n'existe pas sera créer par docker dans host, ro=read only
+----> si le dossier destination à mapper est un dossier système ( /usr, ...), le container sera créer mais pas fonctionnel.
 
 // Addresse IP du host (interface docker0)
 export DOCKERHOST=$(ifconfig docker0 | grep 'inet ' | cut -d '' -f2 | awk '{ print $2}')
