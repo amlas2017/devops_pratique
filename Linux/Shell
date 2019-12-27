@@ -34,6 +34,7 @@ $ echo $?        // affiche 0 si true , ou toute valeur différente de 0 si fals
 // Si un dossier existe:
 $ [ -d /etc/init.d ]
 $ echo $?
+---->   [ "$?" -ne 0 ] && echo "RESULT: faux" && exit 1
 
 //Le fichier contenu dans la variable file n'est pas un répertoire ou n'existe pas
 $ file=/etc/group
