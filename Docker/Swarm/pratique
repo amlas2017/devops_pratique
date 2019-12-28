@@ -1,0 +1,7 @@
+// https://www.ionos.fr/digitalguide/serveur/know-how/docker-orchestration-avec-swarm-et-compose/
+La préparation d’applications multi-conteneurs dans un cluster comporte cinq étapes :
+  -  Créer un registre local Docker
+  -  Définir l’application multi-conteneurs comme pile
+  -  Tester l’application multi-conteneurs avec Compose
+  -  Charger l’image dans le registre.
+  -  Exécuter la pile dans le cluster
