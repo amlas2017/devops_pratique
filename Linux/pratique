@@ -1,9 +1,9 @@
 // La commande sysctl
    /sbin/sysctl est utilisée pour afficher, définir et automatiser les paramètres du noyau dans le répertoire /proc/sys/.
 
-
-
-
+// La commande xargs ( ici pour supprimer ansible + repo (epel) dans centos
+      $ rpm -qa | grep ansible | xargs rpm -e
+      $ rpm -qa | grep -i epel | xargs rpm -e
 
 #################################################################################################################################
                                                             Systemd 
