@@ -66,4 +66,30 @@ exemple:
 ----> ansible-playbook -i hosts deploy.yml --tags "installation"  
 --> En jouant le playbook, on ne verra que la partie installation(la task « install nginx » taggé « installation » s'execute.
 
+// gather_facts
+gather facts == Ansible recueille des faits. Il se connecte à la machine cible puis récupère un certain nombre d’infos comme :
+l'OS, les IP, la mémoire, le disque, etc. Ensuite, il stocke ces informations dans des variables qu’on nomme facts.
+Exemple ----> afficher le nom du système d’exploitation installé sur la machine cible:
+                              ---
+                              - name: show os name
+                                hosts: all
+                                gather_facts: true
+                                become: yes
+                                become_user: root
+                                tasks:
+                                  - name: show operating system name
+                                    debug:
+                                      msg: "Operating system name is : {{ ansible_distribution }}"
+
+
+
+
+
+
+
+
+
+
+
+
 
