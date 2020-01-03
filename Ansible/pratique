@@ -2,6 +2,13 @@
    ----> https://www.linuxtricks.fr/wiki/ansible-automatiser-la-gestion-de-serveurs
 // lister tous les nodes:
 root$ ansible --list-hosts all
+
+// Ajouter plusieurs lignes au fichier /etc/hosts :
+      cat >>/etc/hosts<<EOF
+      172.42.42.100 master
+      172.42.42.101 worker1
+      172.42.42.102 worker2
+      EOF
  
 // Espace disque d'un noeud
 [vagrant@server00 ~]$ ansible server01 -a "df -h"      -----> disque info.
