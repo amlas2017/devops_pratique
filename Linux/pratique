@@ -120,6 +120,8 @@ find -name "*.txt" -atime 1  ---> nombre de jours qui vous séparent du dernier 
   
 // Commande tee : la sortie de la 1ère commade est stockée dans un fichier.Avec l'option -a , tee n'écrasera pas l'ancien fichier.
 echo "deb http://packages.elastic.co/kibana/4.6/debian stable main" | sudo tee -a /etc/apt/sources.list.d/kibana.list
+Exemple: cat id_rsa.pub | tee -a authorized_keys  
+   ----> copier le fichier id_rsa.pub (en l'affichant dans sdout) dans authorized_keys (sans écraser ce dernier).
 
 // Commande grep
 grep -i ---> rend la recherche insensible à la casse
