@@ -1,3 +1,9 @@
+// SSH instance vagrant
+on peut se connecter à la VM sans "vagrant ssh nom-vm":
+Pour infos sur l'ip , le port, la localisation de la clé privée, on tape vagrant ssh-config nom_vm.
+ssh vagrant@127.0.0.1 -p 2205 -i /home/hass/.vagrant/machines/es-data-1/virtualbox/private_key
+
+
 // Pour se connecter à node1 ( $ ssh node1 ), on tape: $ vagrant ssh-config node1 >> ~/.ssh/config
   ( node1 doit etre défini dans /etc/hosts)
   
@@ -12,3 +18,4 @@ https://github.com/justmeandopensource/vagrant
 $ vagrant plugin install vagrant-scp
 // vagrant scp <some_local_file_or_dir> [vm_name]:<somewhere_on_the_vm>
 $ sudo vagrant scp /home/hass/*.sh oraclekafkaetl:/home/vagrant/
+
