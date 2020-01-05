@@ -8,11 +8,9 @@
 #################################################################################################################################
                                                             Systemd 
 #################################################################################################################################
-// Pour vérifier si Systemd est installé, on tape :   ps -p 1
+// Pour vérifier si Systemd est installé, on tape :   ps -p 1 
 // Tous les services actifs : $ systemctl list-units --type=service
 // Si un service est actif : $ systemctl is-active mon_service
-
-
 
 // L'IP de la machine  ------> hostname -I
 
@@ -27,8 +25,6 @@ ubuntu -----> sudo cat /etc/lsb-release
 
 // Emplacement java
 update-java-alternatives -l
-
-// Pour vérifier si Systemd est installé, on tape :   ps -p 1
 
 #################################################################################################################################
                                                 Synchronisation avec rsync 
