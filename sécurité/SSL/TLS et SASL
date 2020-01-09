@@ -1,0 +1,2 @@
+// SSL / TLS est un protocole de communication, tandis que SASL est un framework, intégré à d'autres protocoles (Kerberos). 
+(En fait, on peut utiliser les deux en même temps dans certaines circonstances.)
