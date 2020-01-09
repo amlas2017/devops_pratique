@@ -2,3 +2,10 @@
 (En fait, on peut utiliser les deux en même temps dans certaines circonstances.)
 
 ---> Kerberos, qui est en effet un protocole d'authentification peut être utilisé avec SSL/TLS ou SASL ou indépendamment les deux).
+
+L'objectif général de SSL/TLS est de sécuriser la communication (intégrité et confidentialité) entre un client et un serveur. 
+Le client doit toujours vérifier l'identité du serveur SSL/TLS et il fournit également des mécanismes permettant au serveur de 
+vérifier l'identité du client. Ce qu'il peut faire dépend également de la façon dont il est configuré. SSL/TLS est le plus couramment utilisé avec les certificats X.509: c'est ainsi qu'un navigateur peut vérifier l'identité d'un 
+serveur HTTPS. 
+----> Les serveurs peuvent également être configurés pour demander au client d'utiliser un certificat pour s'identifier 
+      (authentification par certificat client).
