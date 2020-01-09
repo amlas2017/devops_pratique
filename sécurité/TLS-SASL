@@ -1,0 +1,4 @@
+// SSL / TLS est un protocole de communication, tandis que SASL est un framework, intégré à d'autres protocoles (Kerberos). 
+(En fait, on peut utiliser les deux en même temps dans certaines circonstances.)
+
+---> Kerberos, qui est en effet un protocole d'authentification peut être utilisé avec SSL/TLS ou SASL ou indépendamment les deux).
