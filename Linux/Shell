@@ -1,7 +1,5 @@
 ???????????
 https://sysreseau.net/tune2fs-modifier-les-parametres-des-fs-ext2-ext3-et-ext4/
-https://www.admin-linux.fr/bash-verifier-quune-commande-existe/
-??????????,,
 
 // Variables spéciales: ( #! /bin/bash )
 sh ./mon-script.sh param1 param2
