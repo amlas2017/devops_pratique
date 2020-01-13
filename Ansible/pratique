@@ -14,6 +14,11 @@ root$ ansible --list-hosts all
 [vagrant@server00 ~]$ ansible server01 -a "df -h"      -----> disque info.
 [vagrant@server00 ~]$ ansible server01 -a "free -m"    -----> mémoire info.
 
+// Install httpd via systemd avec ansible ad-hoc
+$ ansible cluster-servers -b -m yum -a name="httpd state=latest"     -----> installer d'abord httpd
+$ ansible cluster-servers -b -m systemd -a "name=httpd state=started"    -----> starter le service
+
+
 // Playbook pour installer les dépendances (Centos)
 ---
 - name: Installation du serveur
