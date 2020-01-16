@@ -18,6 +18,7 @@ root$ ansible --list-hosts all
 $ ansible cluster-servers -b -m yum -a name="httpd state=latest"     -----> installer d'abord httpd
 $ ansible cluster-servers -b -m systemd -a "name=httpd state=started"    -----> starter le service
 
+// Préparation professionnelle d'inventory -------->   http://xplordat.com/2017/12/12/elk-stack-with-vagrant-and-ansible/
 
 // Playbook pour installer les dépendances (Centos)
 ---
