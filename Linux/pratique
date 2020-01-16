@@ -29,12 +29,9 @@ ubuntu -----> sudo cat /etc/lsb-release
 #################################################################################################################################
 'fuser' permet de lister les processus liés à un système de fichiers.
 
-
 // Libérer le port 8080  ------>     $ sudo fuser -k -n tcp 8080
-
-
-// Emplacement java
-update-java-alternatives -l
+À utiliser avec précaution et en connaissance de cause, la commande fuser avec l'option -k tue en une seule ligne de commande 
+les process accédant à un fichier(ou filesystem) sans devoir lancer unitairement la commande kill. 
 
 #################################################################################################################################
                                                 Synchronisation avec rsync 
