@@ -1,0 +1,32 @@
+---
+- name: Creation de partition
+  hosts: localhost
+  remote_user: vagrant
+  become: yes
+  tasks:
+  - name: Create 200M partition
+    parted:
+      device: /dev/sdb
+      number: 1
+      state: present
+      part_start: 2MiB
+      part_end: 200MiB
+
+  - name: Format the Disk
+    filesystem:
+      fstype: ext4
+      dev: /dev/sdb1
+
+  - name: Create Directory
+    file:
+      path: /mnt/sdb1
+      state: directory
+      mode: '0755'
+
+  - name: Mount Partition
+    mount:
+      path: /mnt/sdb1
+      src: /dev/sdb1
+      fstype: ext4
+      state: mounted
+
