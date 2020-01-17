@@ -20,6 +20,8 @@ $ ansible cluster-servers -b -m systemd -a "name=httpd state=started"    -----> 
 
 // Préparation professionnelle d'inventory -------->   http://xplordat.com/2017/12/12/elk-stack-with-vagrant-and-ansible/
 
+// Tester la synthaxe du playbook avant de la lancer ----->  ansible-playbook  playbook.yml --syntax-check
+
 // Playbook pour installer les dépendances (Centos)
 ---
 - name: Installation du serveur
