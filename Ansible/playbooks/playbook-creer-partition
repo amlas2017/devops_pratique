@@ -19,14 +19,13 @@
 
   - name: Create Directory
     file:
-      path: /mnt/sdb1
+      path: /mnt/point-montage
       state: directory
       mode: '0755'
 
   - name: Mount Partition
     mount:
-      path: /mnt/sdb1
+      path: /mnt/point-montage
       src: /dev/sdb1
       fstype: ext4
       state: mounted
-
