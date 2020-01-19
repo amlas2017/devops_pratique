@@ -51,8 +51,20 @@ Il permet de faire en sorte de lancer un programme en tant que l'user qui possè
 le fichier.  ---->  chmod 4755 nom_du_fichier   ,  setuid=4
              ---->  chmod 6755 nom_du_fichier   , 6 = setuid(4) + setgid(2)
 
+#################################################################################################################################
+                                                       journalctl 
+#################################################################################################################################         
+
 // Checker les logs pour un service : ----> journalctl --help
-sudo journalctl --unit elasticsearch (log pour elasticsearch)
+sudo journalctl --unit elasticsearch (log pour elasticsearch)  ou sudo journalctl -u ssh
+sudo journalctl -f    ----> derniers événements 
+sudo journalctl -p err  ---->  logs des erreurs   <-----------------------  Important !!!!!
+sudo journalctl --since "2020-01-19 19:32:00"
+sudo journalctl --until "2020-01-10 22:00:00"
+sudo journalctl -since "2020-01-19 19:32:00" --until "2016-01-19 22:00:00"
+sudo journalctl --since "10 minutes ago"
+sudo journalctl /usr/sbin/sshd
+
 
 // Liste de packages installés ubuntu pour les supprimer...
 $ dpkg --list
