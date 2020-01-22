@@ -1,7 +1,10 @@
 // Préparer l'environnement/cluster pour ansible :
    ----> https://www.linuxtricks.fr/wiki/ansible-automatiser-la-gestion-de-serveurs
+
 // lister tous les nodes:
 root$ ansible --list-hosts all
+$ ansible -i inventory --list-hosts all
+hass$ ansible -i inventory -m ping node1
 
 // Ajouter plusieurs lignes au fichier /etc/hosts :
       cat >>/etc/hosts<<EOF
@@ -19,6 +22,19 @@ $ ansible cluster-servers -b -m yum -a name="httpd state=latest"     -----> inst
 $ ansible cluster-servers -b -m systemd -a "name=httpd state=started"    -----> starter le service
 
 // Préparation professionnelle d'inventory -------->   http://xplordat.com/2017/12/12/elk-stack-with-vagrant-and-ansible/
+---> Exemples d'inventory sans modifier ni /etc/hosts(de ansible-manager) ni /etc/ansible/hosts
+node1 ansible_host=172.20.20.10 ansible_user=vagrant ansible_ssh_private_key_file=.vagrant/machines/node1/virtualbox/private_key
+node2 ansible_host=172.20.20.20 ansible_user=vagrant ansible_ssh_private_key_file=.vagrant/machines/node2/virtualbox/private_key
+node3 ansible_host=172.20.20.30 ansible_user=vagrant ansible_ssh_private_key_file=.vagrant/machines/node3/virtualbox/private_key
+
+[kafka_broker_nodes]
+node[1:3]
+
+
+
+
+
+
 
 // Tester la synthaxe du playbook avant de la lancer ----->  ansible-playbook  playbook.yml --syntax-check
 
