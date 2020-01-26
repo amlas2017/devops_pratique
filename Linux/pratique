@@ -240,4 +240,9 @@ Rsyslog implémente syslog. Ainsi les outils utilisés pour syslog restent valab
      $ logger System rebooted
      # tail -f /var/log/syslog
 
+// Dans la configuration par défaut, le journal de systemd n'est pas persistant(suppression des logs à chaque redémarrage).
+   ---> Ainsi on peut modififier la directives correpondenste dans le fichier /etc/systemd/journal.conf
+
+
+
 
