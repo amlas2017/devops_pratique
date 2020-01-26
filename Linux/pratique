@@ -4,6 +4,14 @@
 // La commande nc   ?????
 
 
+#################################################################################################################################
+                                                            awk
+#################################################################################################################################
+// Lister tous les users 'physiques' (non système et dont UID >= 1000):
+$ awk -F: '$3 > 999 {print $1}' /etc/passwd
+
+
+
 
 // La commande xargs ( ici pour supprimer ansible + repo (epel) dans centos
       $ rpm -qa | grep ansible | xargs rpm -e   -----> ( -e pour erase, -a pour all )
