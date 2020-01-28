@@ -2,3 +2,7 @@ https://blog.alphorm.com/reseau-docker-partie-1-bridge/
 -> docker0 = réseau bridge crée par défaut par docker
 -> tout container crée est dans le réseau docker0
 -> on peut créer un réseau docker et lui attacher des containers.
+
+// DNS
+Docker daemon exécute un serveur DNS intégré qui fournit une résolution de noms aux conteneurs connectés au réseau créé par les 
+utilisateurs, de sorte que ces conteneurs peuvent résoudre les noms de d’hôtes en adresses IP.
