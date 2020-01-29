@@ -76,15 +76,14 @@ exemple:
 ---
 ...
 - name: install nginx
-        yum:
-          name: nginx
-          state: present
-        tags:
-          - installation
+  yum:
+    name: nginx
+    state: present
+  tags: installation
 ...          
           
 ----> ansible-playbook -i hosts deploy.yml --tags "installation"  
---> En jouant le playbook, on ne verra que la partie installation(la task « install nginx » taggé « installation » s'execute.
+     ----> on ne verra que la partie installation(la seule task « install nginx » taggée « installation » s'execute.
 
 // gather_facts
 gather facts == Ansible recueille des faits. Il se connecte à la machine cible puis récupère un certain nombre d’infos comme :
