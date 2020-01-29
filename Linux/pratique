@@ -110,6 +110,8 @@ La commande fg renvoie un processus au premier plan (la commande jobs liste les 
 - Pour commenter les lignes 15 à 30 ---------------->  ESC + :15,30s/^/#   et pour décommenter  :15,30s/^#
 - Pour commenter les 23 lignes suivantes (par rapport au curseur) :ESC + :.,+23s/^/#  
 
+- Pour activer la souris dans VIM ----> :set mouse=a
+
 ###################################################################################################################################
                                                         Commande FIND
 ###################################################################################################################################
