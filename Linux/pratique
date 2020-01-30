@@ -6,6 +6,11 @@
 // Variables d'environnement:
 export ZK_HOME=/opt/zookeeper     ???
 
+// Infos CPU
+$ cat /proc/cpuinfo
+$ cat /proc/cpuinfo | grep -i "^processor" | wc -l        nombre de coeurs
+$ lscpu
+$ lshw -C CPU
 
 
 #################################################################################################################################
