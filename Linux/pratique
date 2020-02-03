@@ -3,6 +3,9 @@
 
 // La commande nc   ?????
 
+// Install JDK8
+     $ sudo yum -y install java-1.8.0-openjdk
+
 // Variables d'environnement:
 export ZK_HOME=/opt/zookeeper     ???
 
