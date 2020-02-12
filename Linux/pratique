@@ -143,7 +143,7 @@ find -name "*.txt" -atime 1  ---> nombre de jours qui vous séparent du dernier 
 ##################################################################################################################################
   sed -i 's/mot_original/nouveau_mot/g' nom_fichier.txt  ----> (s = substitution, g = tous les mots de la ligne)
   
-  sed -e      -------->    commande uniligne
+  sed -e      -------->    commande uniligne ( cad n'affiche rien)
   sed -f fichier    --------->     passage de commande par un script
   sed -i      --------->   modifie directement le fichier source au lieu de rediriger vers la sortie standard
   sed '1d;4d' test.txt  ------>  supprimer les lignes 1 et 4.
@@ -154,6 +154,8 @@ find -name "*.txt" -atime 1  ---> nombre de jours qui vous séparent du dernier 
                                  Les lignes demandées apparaissent donc en double.
   sed -n '1,4p' test.txt  ------->  L'option -n permet de ne pas afficher le reste du fichier.                              
   
+  sed -i -e 's/ancienMot/nouveauMot/g' fichier.txt  ----> remplacer ancienMot par nouveauMot dans fichier.txt sans rien afficher.
+                                                    ----> très pratique dans les scripts.
   
 // Commande tee : la sortie de la 1ère commade est stockée dans un fichier.Avec l'option -a , tee n'écrasera pas l'ancien fichier.
 echo "deb http://packages.elastic.co/kibana/4.6/debian stable main" | sudo tee -a /etc/apt/sources.list.d/kibana.list
