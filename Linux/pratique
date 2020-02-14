@@ -1,3 +1,7 @@
+// Le noyau de Linux a deux fonctions principales :
+   i) Contrôler l'accès aux périphériques physiques de l'ordinateur,
+  ii) Programmer à quel moment et de quelle façon les processus vont interagir avec ces périphériques.
+
 // La commande sysctl
    /sbin/sysctl est utilisée pour afficher, définir et automatiser les paramètres du noyau dans le répertoire /proc/sys/.
 
