@@ -19,6 +19,8 @@ $ cat /proc/cpuinfo | grep -i "^processor" | wc -l        nombre de coeurs
 $ lscpu
 $ lshw -C CPU
 
+// libérer le port 8080     --------->       sudo fuser -k -n tcp 8080
+
 
 #################################################################################################################################
                                                             awk
