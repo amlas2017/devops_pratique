@@ -1,8 +1,12 @@
 // Variables d'environnement  --->  Ajouter un chemin dans le PATH sous linux.
-
 -  Pour voir tous les chemins des commandes que vous avez dans $PATH    -------->   echo $PATH
 -  Seulement pour la session en cours    -------->  export PATH=$PATH:/home/user/mes_prog
 -  De manière permanente     --------->    echo 'export PATH=$PATH:/home/user/mes_prog' >> /home/user/.bashrc
+ou
+sudo vim ~/.bash_profile     ------->   source .bash_profile
+
+// 
+
 
 // Le noyau de Linux a deux fonctions principales :
    i) Contrôler l'accès aux périphériques physiques de l'ordinateur,
