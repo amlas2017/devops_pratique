@@ -53,13 +53,13 @@ $ awk -F: '$3 > 999 {print $1}' /etc/passwd
 // Tous les services actifs : $ systemctl list-units --type=service
 // Si un service est actif : $ systemctl is-active mon_service
 
-// L'IP de la machine  ------> hostname -I
-
 // cut -d: -f6 /etc/passwd   ----> affiche le 6eme champ du fichier /etc/passwd, dont le séparateur de champs est ":".
 
 // Infos du host (version/distribution d' OS):
-centos -----> sudo hostnamectl   
-ubuntu -----> sudo cat /etc/lsb-release
+   centos -----> sudo hostnamectl   
+   ubuntu -----> sudo cat /etc/lsb-release
+   // L'IP de la machine  ------>  hostname -I
+   // Changer le hostname ------->  hostnamectl set-hostname nouveau_hostname
 
 #################################################################################################################################
                                                             fuser
