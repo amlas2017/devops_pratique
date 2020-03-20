@@ -280,6 +280,32 @@ Rsyslog implémente syslog. Ainsi les outils utilisés pour syslog restent valab
 // Dans la configuration par défaut, le journal de systemd n'est pas persistant(suppression des logs à chaque redémarrage).
    ---> Ainsi on peut modififier la directives correpondenste dans le fichier /etc/systemd/journal.conf
 
+###################################################################################################################################
+                                                Gestion de mémoire sous Linux
+###################################################################################################################################
+----> https://wiki.deimos.fr/La_gestion_de_la_m%C3%A9moire_sous_Linux.html
 
+// Les dirty pages contiennent des données qui peuvent être écrites sur le disque.
+  # cat /proc/vmstat | egrep "dirty|writeback"
 
+La mémoire n'étant pas illimité, le kernel ne peut garder les dirty pages en RAM éternellement. Les pages qui sont dirty mais qui
+ne sont plus utilisées, sont vidées sur le disque. C'est le thread kernel pdflush qui gère cette tâche, il y a d'ailleurs 2 thread 
+minimum pour gérer cette opération. Pour voir le nombre de thread pdflush actuellement présents :
+ # sysctl vm.nr_pdflush_threads
+ 
+ Lorsque l'on vide les dirty pages sur le disque, le but est d'éviter les burst IO pour ne pas saturer le disque. Le démond pdflush 
+ écrit les données sur le disque de manière constante et douce. Par défaut les 2 threads pdflush vont faire leurs actions mais d'autres 
+ peuvent se lancer (jusqu'à 8), si les 2 saturent afin d'assurer des écritures parallèles sur plusieurs disques. 
+ Si le ratio du nombre de pages qui sont dirty par rapport au nombre de pages RAM disponibles atteint un certain pourcentage, les
+ process vont se bloquer pendant que le pdflush écrira les données de façon synchrone. 
+ Il existe plusieurs options pour améliorer le pdflush :
 
+  ----->   /etc/sysctl.conf
+# Pourcentage (totale de mémoire) de dirty pages a partir duquel le pdflush doit commencer à écrire
+vm.dirty_background_ratio=<value>
+# Pourcentage (totale de mémoire) de dirty pages a partir duquel le process lui même doit commencer à écrire les données dirty
+vm.dirty_ratio=<value>
+# Intervalle entre lequel le pdflush va se réveiller (100ths/sec) (Temps d'observation). Mettez 0 pour désactiver
+vm.dirty_writeback_centisecs=<value>
+# Définit quand les données sont assez vieilles (100ths/sec) pour être interceptées par pdflush (temps d'attente).
+vm.dirty_expire_centisecs=<value>
