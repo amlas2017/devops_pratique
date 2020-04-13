@@ -5,6 +5,11 @@
 ou
 sudo vim ~/.bash_profile     ------->   source .bash_profile
 
+// La commande set -o :
+Les options -o et +o de la commande interne set permettent respectivement d’activer et de désactiver une option du shell.
+$ set -o option    ou  $ set +o option
+La commande set avec l’option -o affiche la liste des options du shell en indiquant si elles sont actuellement activées ou non.
+
 // La commande scp
 --->  scp exige la connection ssh (les clès...), donc impossible utiliser scp sans la connection ssh:
 ssh vagrant@poste marche  =====>   scp start-kafka.sh vagrant@poste3:/home/vagrant marche
