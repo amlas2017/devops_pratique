@@ -1,0 +1,16 @@
+---
+- hosts: node3
+  tasks:
+    - name: Install add-apt-repostory
+      become: yes
+      apt: name=software-properties-common state=latest
+  
+    - name: Install Java 8
+      become: yes
+      apt:
+       name={{item}}
+       state=latest
+      with_items:
+        - openjdk-8-jre-headless
+        - ca-certificates
+ 
