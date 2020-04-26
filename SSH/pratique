@@ -37,6 +37,17 @@ Dans /etc/ssh/sshd_config, on activeces lignes:
            PermitRootLogin yes
            PubkeyAuthentication yes
            AuthorizedKeysFile .ssh/authorized_keys
-
+           
 Après:  $ systemctl restart sshd
+
+==================================================================================================================================
+// SSHPASS   ---->   permet d'indiquer le mot de passe pour une connexion SSH ou une copie de fichier avec SCP.
+  $ sshpass -p 'password' ssh your_username@your_server
+  
+  $ sshpass -p 'mot_de_passe' ssh root@192.168.61.11 ls -la
+  $ sshpass -p 'mot_de_passe' scp script.sh root@192.166.61.11:/root/
+  
+  
+  
+  
 
