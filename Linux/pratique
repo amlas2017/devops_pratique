@@ -1,3 +1,7 @@
+// Afficher uniquement les lignes non commentées (éliminer les lignes qui commencent par un espace, un # et les lignes vides) 
+   dans un fichier:
+  $ sed -e '/^[ ]*#/d' -e '/^$/d' fichier
+
 // Variables d'environnement  --->  Ajouter un chemin dans le PATH sous linux.
 -  Pour voir tous les chemins des commandes que vous avez dans $PATH    -------->   echo $PATH
 -  Seulement pour la session en cours    -------->  export PATH=$PATH:/home/user/mes_prog
