@@ -194,6 +194,7 @@ Exemple: cat id_rsa.pub | tee -a authorized_keys
 // Commande grep
 grep -i ---> rend la recherche insensible à la casse
 grep -r ---> effectue une recherche récursive
+grep -v ---> n'affiche pas le résultat mais affiche le 'contraire' de l'instruction.
 
 // Quelques commandes Filesystem
 /etc/fstab ---> la table des systèmes de fichiers montés à chaque démarrage de Linux
