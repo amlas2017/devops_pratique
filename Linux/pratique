@@ -2,6 +2,7 @@
    dans un fichier:
       - avec sed:   ----------->   $ sed -e '/^[ ]*#/d' -e '/^$/d' fichier
       - avec grep:  ----------->   $ grep -E -v '^(#|$)' fichier   ou  $ egrep -v '^(#|$)' fichier
+                                    ( l'option -v affiche l'inverse de l'expression régulière '^(#|$)')
 
 // Variables d'environnement  --->  Ajouter un chemin dans le PATH sous linux.
 -  Pour voir tous les chemins des commandes que vous avez dans $PATH    -------->   echo $PATH
