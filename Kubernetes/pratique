@@ -1,3 +1,18 @@
+// Tester un cluster Kubernetes:
+      ---> https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-cluster-using-kubeadm-on-ubuntu-16-04
+ 
+ $ kubectl create deployment nginx --image=nginx
+ $ kubectl get deployment
+ $ kubectl expose deploy nginx --port 80 --target-port 80 --type NodePort
+ $ kubectl get services
+             Output
+            NAME         TYPE        CLUSTER-IP       EXTERNAL-IP           PORT(S)        AGE
+            kubernetes   ClusterIP   10.96.0.1        <none>                443/TCP        1d
+            nginx        NodePort    10.109.228.209   <none>                80:nginx_port/TCP   40m
+ 
+ ----> visit http://worker_1_ip:nginx_port 
+ 
+
 // Les utilitaires kubens (pour namespace) et kubectx (pour le context)
 https://blog.zwindler.fr/2018/08/28/utiliser-kubectx-kubens-pour-changer-facilement-de-context-et-de-namespace-dans-kubernetes/
 
