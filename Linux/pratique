@@ -1,3 +1,6 @@
+// Trouver l'IP du Host :   $ ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/'
+
+
 // Afficher uniquement les lignes non commentées (éliminer les lignes qui commencent par un espace, un # et les lignes vides) 
    dans un fichier:
       - avec sed:   ----------->   $ sed -e '/^[ ]*#/d' -e '/^$/d' fichier
