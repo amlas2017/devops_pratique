@@ -1,3 +1,7 @@
+// Lancer cluster k8s   ---------------->          https://devopscube.com/kubernetes-cluster-vagrant/
+
+
+===================================================================================================================================================================
 // Cluster fonctionnel automatisé avec ansible et vagrant:  ----->  https://graspingtech.com/create-kubernetes-cluster/
                   $ tree
                       ├── Vagrantfile
