@@ -3,7 +3,7 @@
 // ELK fonctionnel (docker-compose , docker swarm , travis...)
 https://github.com/deviantony/docker-elk
 
-// Lister les index elastic (un index est l'équivalent d'une table)
+// Lister les index elastic (un index est l'équivalent d'une table):
 curl -XGET http://localhost:9200/_cat/indices?v
 
 // Requette elasticsearch :  http://localhost:9200/nom_index/type_index/_service
